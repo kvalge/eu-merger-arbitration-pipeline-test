@@ -175,13 +175,18 @@ def extract_context(text: str, pattern: re.Pattern, window: int = 100) -> str:
 def search_pdf(pdf_bytes: bytes, lang: str, rules: dict[str, list[dict]]) -> list[dict]:
     """
     Searches a PDF for keyword rules matching the given language code.
-    Falls back to English rules if no rules exist for the language.
+ 
+    Only languages present in keywords.txt are searched. If no rules exist
+    for the PDF's language (either not defined or all commented out), the PDF
+    is skipped and an empty list is returned — no fallback to another language.
  
     Returns a list of match dicts:
         [{"keyword": "arbitrat*", "language": "EN", "context": "...arbitration mechanism..."}]
     """
-    lang_rules = rules.get(lang.upper()) or rules.get("EN", [])
+    lang_upper = lang.upper()
+    lang_rules = rules.get(lang_upper, [])
     if not lang_rules:
+        log.debug("No keyword rules for language '%s' — skipping PDF", lang_upper)
         return []
  
     found = []

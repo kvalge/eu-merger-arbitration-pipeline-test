@@ -1,69 +1,153 @@
 # Progress
  
-## Tehtud
+## Completed steps
  
-### 1. Projekti alus
-- Loodud projekti kaustapuu:
-  - `ingestion/` — andmete allalaadimise ja töötlemise skriptid
-  - `config/` — seadistusfailid (nt otsisõnade nimekiri)
-  - `data/raw/` — allalaaditud töötlemata sisendandmed
-  - `data/processed/` — töötlustulemused
-  - `logs/` — protsessi metainfo
-  - `docs/` — dokumentatsioon
-- Loodud `requirements.txt` — projekti Pythoni teekide nimekiri
-- `.gitignore` seadistatud — virtuaalkeskkond, cache-failid ja IDE failid jäetakse gitist välja
-### 2. Otsisõnade fail (`config/keywords.txt`)
-- Loodud `config/keywords.txt`, kuhu on kirja pandud vahekohtu-terminid EL keeltes
-- Iga rida on kujul `KEELEKOOD: termin` (nt `EN: arbitrat*`, `ET: vahekoh*`)
-- Tärniga (`*`) saab otsida sõnatüve — nt `arbitrat*` leiab nii `arbitration` kui `arbitral`
-- Kahe sõna AND-tingimus: `CZ: rozhodč*:řízen*` — mõlemad peavad tekstis esinema
-- Iga PDF otsitakse läbi selle keele reeglitega, mis on märgitud JSON-is `attachmentLanguage` väljal
-- **Otsisõnade muutmiseks muuda ainult seda faili — koodi muutma ei pea**
-### 3. Andmete allalaadimine (`ingestion/download_json.py`)
-- Skript laeb Euroopa Komisjoni koondumisotsuste JSON-faili alla aadressilt:
-  `https://compcases-open-data-portal-files-prod.s3.eu-west-1.amazonaws.com/case-data-M.json`
-- Salvestab faili `data/raw/case-data-M.json`
-- Kui fail on juba olemas, ei lae uuesti alla
-- Käivitamine: `python ingestion/download_json.py`
-### 4. JSON-i struktuuri uurimine (`ingestion/inspect_json.py`)
-- Skript loeb allalaetud JSON-faili struktuuri ja prindib statistika
-- JSON-i ülesehitus:
-  - Tipp on dict, kus võti = `caseNumber` (nt `"M.2027"`)
-  - Iga case sisaldab `metadata`, `caseAttachments`, `decisions`
-  - Otsused (`decisions`) on list — igal otsusel on `metadata` ja `decisionAttachments`
-  - Otsuse PDF-link asub: `decisions → decisionAttachments → metadata → attachmentLink`
-  - Kõik väärtused on listid (nt `"caseNumber": ["M.2027"]`)
-- Skript filtreerib ainult Art. 6(1)(b) ja Art. 8(2) otsuseid sisaldavaid case'id
-- Väljastab statistika: otsuste tüübid, sektorid (NACE divisjoni tasemel), attachment-keeled
-- Salvestab väljundi `ingestion/inspect_json_output.txt`
-- Käivitamine: `python ingestion/inspect_json.py`
-### 5. PDF-ide otsimine ja tulemuste salvestamine (`ingestion/ingest.py`)
-- Skript käib läbi kõik relevantsed case'id (Art. 6(1)(b) või Art. 8(2) otsusega)
-- Iga case kohta:
-  1. Leiab otsuse külge lisatud PDF-failid
-  2. Laeb PDF alla
-  3. Otsib PDF-ist otsisõnu — keele järgi (nt prantsuskeelsest PDF-ist otsitakse `arbitrag*`)
-  4. Kui sõna leitakse, salvestatakse case'i andmed tulemuste faili
-- Tulemused salvestatakse kahes formaadis:
-  - `data/processed/arbitration_hits.jsonl` — masinloetav, üks kirje rea kohta (dbt jaoks)
-  - `data/processed/arbitration_hits_readable.json` — inimloetav, taandega
-- Protsessi statistika salvestatakse `logs/ingest_summary.json`:
-  - kõigi case'ide arv, relevantsete otsuste koguarv, hits arv
-  - kasutatakse hiljem dashboardil osakaalu arvutamiseks (`matchedDecisions / totalRelevantDecisions`)
-- Skript töötab lihtsalt järjest (üks PDF korraga) — lihtne debugida
-- Testimiseks saab piirata töödeldavate case'ide arvu: `TEST_LIMIT=5 python ingestion/ingest.py`
-- Käivitamine: `python ingestion/ingest.py`
+### 1. Project foundation
+- Created project folder structure:
+  - `ingestion/` — scripts for downloading and processing data
+  - `config/` — configuration files (e.g. keyword list)
+  - `data/raw/` — downloaded source data (JSON file from EC)
+  - `data/processed/` — processing results (hits file)
+  - `logs/` — process metadata (summary, checkpoint)
+  - `docs/` — documentation
+- Created `requirements.txt` — list of Python dependencies
+- Configured `.gitignore` — virtual environment, cache files and IDE files excluded; data files committed to git (35 MB, fits fine)
 ---
  
-## Järgmised sammud
+### 2. Keyword configuration (`config/keywords.txt`)
+
+Each line has the format `LANG: term` where `LANG` is the two-letter language code
+matching the `attachmentLanguage` field in the JSON (e.g. `EN: arbitrat*`, `ET: vahekoh*`).
+
+**Format rules:**
+- Wildcard `*` matches any number of characters — `arbitrat*` matches `arbitration`, `arbitral`, `arbitrator`, etc.
+- AND condition: `CZ: rozhodč*:řízen*` — both terms must appear in the text
+- OR condition: put each variant on its own line
+- Empty lines and lines starting with `#` are ignored
+
+**Language matching:**
+Each PDF is searched using only the rules for its language as indicated by the
+`attachmentLanguage` field in the JSON. If no rules exist for a PDF's language —
+either because the language is not in `keywords.txt` or all its rules have been
+commented out — the PDF is skipped entirely. There is no fallback to another language.
+This means commenting out all rules for a language reliably disables searching for that language.
+
+**Maintenance:**
+- Languages are sorted alphabetically by language code (BG → SV)
+- Rules that were found to be too broad are kept but commented out, with an explanation
+  (e.g. `FR: arbitrag*` matched economic arbitrage, not arbitration proceedings;
+  `FI: välitys*` matched `välityksellä` meaning "via/through")
+- **To change search terms in the future: edit this file only — no code changes needed**
+
+---
  
-1. **Katkestuse korral taasalustamine** — lisada `ingest.py`-sse checkpoint-loogika,
-   et kui protsess katkeb, ei pea otsast alustama
-2. **Andmete uuendamine** — lisada loogika, et ainult uued või muutunud kirjed
-   protsessitakse uuesti (mitte kogu andmestik)
-3. **dbt seadistamine** — `arbitration_hits.jsonl` laadimine PostgreSQL-i ja
-   transformatsioonikihi ehitamine
-4. **Docker Compose** — PostgreSQL, dbt, Airflow ja Superset konteinerites
-5. **Airflow DAG** — automaatne ajaplaneerija: kord kuus ingest → dbt → test
-6. **Dashboard** — Superset või Streamlit, kuvab mõõdikud README-st
+### 3. JSON download (`ingestion/download_json.py`)
+- Downloads the European Commission merger decisions JSON from:
+  `https://compcases-open-data-portal-files-prod.s3.eu-west-1.amazonaws.com/case-data-M.json`
+- Saves to `data/raw/case-data-M.json`
+- If the file already exists, skips the download
+- Run: `python ingestion/download_json.py`
+---
  
+### 4. JSON structure inspection (`ingestion/inspect_json.py`)
+- Explores the downloaded JSON and prints statistics
+- Identified actual JSON structure:
+  - Top level is a dict where key = `caseNumber` (e.g. `"M.2027"`)
+  - Each case contains `metadata`, `caseAttachments`, `decisions`
+  - `decisions` is a list — each decision has `metadata` and `decisionAttachments`
+  - PDF link is nested deep: `decisions → decisionAttachments → metadata → attachmentLink`
+  - All values are lists (e.g. `"caseNumber": ["M.2027"]`)
+- Filters to cases with Art. 6(1)(b) or Art. 8(2) decisions only
+- Prints statistics: decision types, sectors (grouped by NACE division), attachment languages
+- Saves output to `ingestion/inspect_json_output.txt` (not committed to git)
+- Run: `python ingestion/inspect_json.py`
+---
+ 
+### 5. PDF search and results (`ingestion/ingest.py`)
+ 
+#### What it does
+Iterates over all relevant cases (those with an Art. 6(1)(b) or Art. 8(2) decision),
+downloads their PDF attachments, searches for keywords by language, and saves matches.
+ 
+#### Step by step
+1. Loads keyword rules from `config/keywords.txt`, grouped by language code
+2. Loads `data/raw/case-data-M.json`
+3. Filters to relevant cases — those with at least one Art. 6(1)(b) or Art. 8(2) decision
+4. For each relevant case:
+   - Finds PDF links in `decisionAttachments`
+   - Downloads the PDF
+   - Looks up the keyword rules for the PDF's `attachmentLanguage`
+   - Searches the full PDF text using those rules
+   - If a keyword matches: saves the case record with only the matched decision
+5. Writes results to two output files
+6. Writes a summary to `logs/ingest_summary.json`
+7. Clears the checkpoint file on successful completion
+#### Output files
+- `data/processed/arbitration_hits.jsonl` — one JSON object per line, machine-readable (for dbt)
+- `data/processed/arbitration_hits_readable.json` — same content, indented, human-readable (for reviewing on GitHub)
+- `logs/ingest_summary.json` — process statistics:
+  - total cases, total relevant cases, total relevant decisions
+  - matched cases and matched decisions
+  - used later on the dashboard to calculate the share: `matchedDecisions / totalRelevantDecisions`
+#### Each hit record contains
+- Case-level fields: `caseNumber`, `caseTitle`, `caseCompanies`, `caseInstrument`,
+  `caseRegulation`, `caseSimplified`, `caseSectors`, `caseInitiationDate`,
+  `caseNotificationDate`, `caseDeadlineDate`, `caseLastDecisionDate`
+- Only the matched decisions (not all decisions of the case)
+- Each matched decision includes: `decisionNumber`, `decisionAdoptionDate`,
+  `decisionOfficialJournalPublicationsPublishedDates`, `decisionTypes`, `decisionAttachments`
+- Match metadata: `_matchedKeywords` (keyword, language, context snippet), `_matchedPdfUrl`, `_processedAt`
+#### Testing
+To process only the first N relevant cases:
+```bash
+TEST_LIMIT=20 python ingestion/ingest.py
+```
+To run the full dataset:
+```bash
+python ingestion/ingest.py
+```
+ 
+---
+ 
+### 6. Checkpoint (`logs/checkpoint.json`)
+ 
+The checkpoint system allows the ingest process to resume from where it stopped
+if it is interrupted (e.g. network error, manual `Ctrl+C`, machine restart).
+ 
+#### How it works
+- Before processing starts, the checkpoint file is read (if it exists)
+- The file contains a list of `caseNumber` values that have already been processed
+- At the start of each case, the script checks: `if caseNumber in checkpoint → skip`
+- After each case is processed (whether a match was found or not), the checkpoint file
+  is rewritten with the updated list — this happens after **every single case**
+- If the process is interrupted at any point, the checkpoint captures everything
+  up to the last completed case
+- On restart, processing resumes from the first case not yet in the checkpoint
+- On successful completion, the checkpoint file is automatically deleted
+#### Key detail
+The checkpoint tracks **all processed cases**, not just the ones where a keyword was found.
+This ensures no case is ever processed twice, regardless of the result.
+ 
+#### Example log output on resume
+```
+Resuming from checkpoint: skipping 358 already-processed cases
+Processing case 359 / 9038: M.2940
+Processing case 360 / 9038: M.2941
+...
+```
+ 
+#### Note on TEST_LIMIT
+When `TEST_LIMIT` is set, the checkpoint is not used — test runs are always
+processed from scratch and do not interfere with a real run in progress.
+ 
+---
+ 
+## Next steps
+ 
+1. **Manual result validation** — review `arbitration_hits_readable.json` for false positives
+   and refine `keywords.txt` as needed
+2. **Re-run ingest** — after keyword changes, delete checkpoint (if any) and re-run
+3. **dbt setup** — load `arbitration_hits.jsonl` into PostgreSQL and build transformation layer
+4. **Docker Compose** — PostgreSQL, dbt, Airflow and Superset in containers
+5. **Airflow DAG** — automated scheduler: monthly ingest → dbt run → dbt test
+6. **Dashboard** — Superset or Streamlit displaying the metrics from the README
