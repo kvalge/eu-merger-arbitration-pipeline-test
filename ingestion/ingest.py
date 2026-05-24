@@ -8,7 +8,7 @@ Steps:
   3. Filter to relevant cases: those with an Art. 6(1)(b) or Art. 8(2) decision.
   4. For each relevant case, find PDF attachments on qualifying decisions.
   5. Download each PDF and search for keywords matching the attachment language.
-  6. Write matched records to data/raw/arbitration_hits.jsonl.
+  6. Write matched records to data/processed/arbitration_hits.jsonl.
  
 Usage:
     python ingestion/ingest.py
@@ -44,10 +44,18 @@ DATA_PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)
  
 RAW_JSON_PATH = DATA_RAW_DIR / "case-data-M.json"
+ 
+# Production output files
 HITS_PATH = DATA_PROCESSED_DIR / "arbitration_hits.jsonl"
 HITS_READABLE_PATH = DATA_PROCESSED_DIR / "arbitration_hits_readable.json"
 SUMMARY_PATH = LOGS_DIR / "ingest_summary.json"
 CHECKPOINT_PATH = LOGS_DIR / "checkpoint.json"
+ 
+# Test output files — written instead of production files when TEST_LIMIT is set
+TEST_HITS_PATH = DATA_PROCESSED_DIR / "test_arbitration_hits.jsonl"
+TEST_HITS_READABLE_PATH = DATA_PROCESSED_DIR / "test_arbitration_hits_readable.json"
+TEST_SUMMARY_PATH = LOGS_DIR / "test_ingest_summary.json"
+ 
 KEYWORDS_PATH = CONFIG_DIR / "keywords.txt"
  
 # Limit processing to the first N relevant cases for testing. Set to 0 to process all.
@@ -298,11 +306,29 @@ def process_case(
     matched_pdf_url = None
     matched_decision_indices = []
  
+    # Early skip: check if any attachment language in this case has keyword rules
+    case_langs = {
+        (first(att.get("metadata", {}).get("attachmentLanguage", [])) or "").upper()
+        for dec in case.get("decisions", [])
+        for att in dec.get("decisionAttachments", [])
+    }
+    if not any(lang in rules for lang in case_langs):
+        log.debug("No keyword rules for any attachment language in case %s — skipping", case_number)
+        return None
+ 
     for dec_idx, dec in enumerate(case.get("decisions", [])):
+        # Only search PDFs from relevant decision types (Art. 6(1)(b) or Art. 8(2))
+        dec_types = {
+            parse_label(raw)
+            for raw in dec.get("metadata", {}).get("decisionTypes", [])
+        }
+        if not dec_types & RELEVANT_DECISION_TYPES:
+            continue
+ 
         for att in dec.get("decisionAttachments", []):
             att_meta = att.get("metadata", {})
             link = first(att_meta.get("attachmentLink", []))
-            lang = first(att_meta.get("attachmentLanguage", [])) or "EN"
+            lang = first(att_meta.get("attachmentLanguage", [])) or ""
  
             if not link or not link.lower().endswith(".pdf"):
                 continue
@@ -406,11 +432,29 @@ def main() -> None:
     )
  
     # 4. Process PDFs
-    checkpoint = load_checkpoint()
-    if checkpoint and TEST_LIMIT == 0:
-        log.info("Resuming from checkpoint: skipping %d already-processed cases", len(checkpoint))
+    # TEST_LIMIT runs are fully isolated — checkpoint is never read or written
+    is_test_run = TEST_LIMIT > 0
  
+    if is_test_run:
+        log.info("TEST_LIMIT active — checkpoint disabled for this run")
+        checkpoint = set()
+    else:
+        checkpoint = load_checkpoint()
+        if checkpoint:
+            log.info("Resuming from checkpoint: skipping %d already-processed cases", len(checkpoint))
+ 
+    # On resume, load hits written by the last completed run segment.
+    # Note: hits from a crashed run that had not yet written output files are not recoverable —
+    # those cases are skipped by checkpoint but their in-progress matches are lost.
     hits = []
+    if checkpoint and HITS_PATH.exists():
+        with open(HITS_PATH, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    hits.append(json.loads(line))
+        log.info("Loaded %d existing hits from last written output", len(hits))
+ 
     processed = set(checkpoint)
     session = requests.Session()
     session.headers.update({"User-Agent": "EC-Merger-Research/1.0"})
@@ -423,19 +467,23 @@ def main() -> None:
         if result is not None:
             hits.append(result)
         processed.add(cn)
-        save_checkpoint(processed)
+        if not is_test_run:
+            save_checkpoint(processed)
  
     # 5. Write hits
     log.info("Matches found: %d / %d relevant cases", len(hits), len(relevant))
+    hits_path = TEST_HITS_PATH if is_test_run else HITS_PATH
+    readable_path = TEST_HITS_READABLE_PATH if is_test_run else HITS_READABLE_PATH
+    summary_path = TEST_SUMMARY_PATH if is_test_run else SUMMARY_PATH
     # Machine-readable: one JSON object per line (for dbt)
-    with open(HITS_PATH, "w", encoding="utf-8") as f:
+    with open(hits_path, "w", encoding="utf-8") as f:
         for hit in hits:
             f.write(json.dumps(hit, ensure_ascii=False) + "\n")
-    log.info("Results saved to: %s", HITS_PATH)
+    log.info("Results saved to: %s", hits_path)
     # Human-readable: indented JSON array (for reviewing on GitHub)
-    with open(HITS_READABLE_PATH, "w", encoding="utf-8") as f:
+    with open(readable_path, "w", encoding="utf-8") as f:
         json.dump(hits, f, ensure_ascii=False, indent=2)
-    log.info("Readable results saved to: %s", HITS_READABLE_PATH)
+    log.info("Readable results saved to: %s", readable_path)
  
     # 6. Write summary
     summary = {
@@ -447,10 +495,10 @@ def main() -> None:
         "testLimit": TEST_LIMIT if TEST_LIMIT > 0 else None,
         "processedAt": datetime.now(timezone.utc).isoformat(),
     }
-    SUMMARY_PATH.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
-    log.info("Summary saved to: %s", SUMMARY_PATH)
-    # Clear checkpoint on successful completion
-    if CHECKPOINT_PATH.exists():
+    summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
+    log.info("Summary saved to: %s", summary_path)
+    # Clear checkpoint on successful completion (only for real runs)
+    if not is_test_run and CHECKPOINT_PATH.exists():
         CHECKPOINT_PATH.unlink()
         log.info("Checkpoint cleared after successful completion")
     log.info("=== Ingestion completed in %.1f s ===", time.time() - start)

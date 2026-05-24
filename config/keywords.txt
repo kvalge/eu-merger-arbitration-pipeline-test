@@ -71,7 +71,11 @@ LV: šķīrējties*
 MT: arbitraġ*
 MT: artbiral*
  
-NL: arbitrag*
+# NL: arbitrag*  — too broad: matches 'arbitrage' (= economic arbitrage), causing false positives
+NL: arbitrageprocedure*
+NL: arbitragebeding*
+NL: arbitragetribunaal*
+NL: scheidsgerecht*
  
 PL: arbitraż*
  
