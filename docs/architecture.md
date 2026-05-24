@@ -1,72 +1,58 @@
-# Arhitektuur
+# Architecture
 
 
-## Äriküsimus
+## Business Question
 
-Kui paljudes Euroopa Komisjoni tingimuslikes koondumisotsustest viimasel kuul ja kogu ajaloos on kaalutud vahekohtumehhanismi tingimuste jõustamiseks?  
-Milline on nende otsuste sektoraalne jaotuvus?  
-
-## Mõõdikud
-
-1. Kalendrikuu otsustes vahekohtumehhanismi mainimine, jah/ei näitaja.  
-2. Vahekohtumehhanismi mainivate otsuste koguarv ja osakaal kuude/aastate lõikes.  
-3. Millistes NACE tegevusalades on kaalutud vahekohtumehhanismi?  
-4. Milline on trend tegevusalati kuude/aastate lõikes?  
+In how many European Commission conditional merger decisions over the last month and across the full historical period has an arbitration mechanism been considered for enforcing commitments?  
+What is the sectoral distribution of these decisions?  
 
 
-## Andmeallikad
+## Metrics
 
-| Allikas | Tüüp | Andmete uuendamine | Roll |
-|---------|------|--------------|------|
-| https://compcases-open-data-portal-files-prod.s3.eu-west-1.amazonaws.com/case-data-M.json |JSON | Uueneb otsuste/info lisandumisel (tavaliselt iga kuu) | Algallikas |
+1. Mention of an arbitration mechanism in monthly decisions (yes/no indicator).  
+2. Total number and share of decisions mentioning arbitration mechanisms by month/year.  
+3. In which NACE economic activity sectors have arbitration mechanisms been considered?  
+4. What are the trends by sector over months/years?  
 
 
-## Andmevoog
+## Data Sources
+
+| Source | Type | Data Update Frequency | Role |
+|---------|------|----------------------|------|
+| https://compcases-open-data-portal-files-prod.s3.eu-west-1.amazonaws.com/case-data-M.json | JSON | Updated when new decisions/information are added (usually monthly) | Primary data source |
+
+
+## Data Flow
 
 ```mermaid
 flowchart LR
-    source[Andmeallikas] --> ingest[Sissevõtt]
+    source[Dataset] --> ingest[Ingestion]
     ingest --> staging[(staging)]
-    staging --> transform[Transformatsioon]
+    staging --> transform[Transformation]
     transform --> mart[(mart)]
-    mart --> dashboard[Näidikulaud]
-    mart --> quality[Andmekvaliteedi testid]
+    mart --> dashboard[Dashboard]
+    mart --> quality[Data Quality Tests]
     scheduler[Scheduler] --> ingest
 ```
 
-<p align="center">
-  <img src="images/architecture.png" width="800">
-</p>
+## Database Layers
 
-
-## Andmebaasi kihid
-
-| Kiht | Roll |
+| Layer | Role |
 |------|------|
-| `staging` | Hoiab allika andmeid töötlemata kujul. |
-| `intermediate` | Rakendab äriloogikat. |
-| `mart` | Hoiab transformeeritud ja äriloogikat sisaldavaid tabeleid. |
+| `staging` | Stores source data in raw format. |
+| `intermediate` | Applies business logic. |
+| `mart` | Stores transformed tables containing business logic. |
 
 
-## Tööjaotus
+## Risks
 
-| Roll | Vastutus | Täitja |
-|------|----------|--------|
-| Andmeallika omanik | Kirjutab sissevõtu ja uuendamise loogika | Katrin |
-| Transformatsioonide omanik | Kirjutab intermediate ja mart kihi mudelid ning mõõdikute arvutuse | Riina, Katrin |
-| Kvaliteedi omanik | Kirjutab testid ja vaatab läbi ebaõnnestunud kontrollid | Vahur |
-| Näidikulaua omanik | Ehitab näidikulaua ja seob selle äriküsimusega | Riina |
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| The European Commission webpage used for loading data is unavailable | Data cannot be updated | Retry the update process |
+| The structure of the data file has changed | Required values cannot be located | File structure validation and change notifications |
 
 
-## Riskid
+## Privacy and Security
 
-| Risk | Mõju | Maandus |
-|------|------|---------|
-| Euroopa Komisjoni lehekülg, kust andmed laetakse, on maas | Andmeid ei saa uuendada | Uuendamist korratakse |
-| Andmefaili struktuur on muutunud | Ei leia vajalikke väärtusi üles | Faili struktuuri kontroll, muutustest teavitamine |
-
-
-## Privaatsus ja turve
-
-Andmeallikas on avalik.  
-Andmebaasi paroolid salvestatakse `.env` faili.
+The data source is public.  
+Database passwords are stored in the `.env` file.
