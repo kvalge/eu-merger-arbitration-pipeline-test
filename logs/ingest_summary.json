@@ -1,9 +1,9 @@
 {
-  "totalCases": 10225,
-  "totalRelevantCases": 9038,
-  "totalRelevantDecisions": 9041,
-  "matchedCases": 15,
-  "matchedDecisions": 15,
+  "totalCases": 10229,
+  "totalRelevantCases": 9043,
+  "totalRelevantDecisions": 9046,
+  "matchedCases": 25,
+  "matchedDecisions": 25,
   "testLimit": null,
-  "processedAt": "2026-05-23T20:35:52.446254+00:00"
+  "processedAt": "2026-05-24T18:27:33.442785+00:00"
 }

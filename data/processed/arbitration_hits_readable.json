@@ -1,5 +1,535 @@
 [
   {
+    "caseNumber": "M.912",
+    "caseTitle": "SIEMENS / HUF",
+    "caseCompanies": [
+      "SIEMENS / HUF"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.29.32 - Manufacture of other parts and accessories for motor vehicles"
+    ],
+    "caseInitiationDate": "1997-03-21",
+    "caseNotificationDate": "1997-03-21",
+    "caseDeadlineDate": "1997-04-29",
+    "caseLastDecisionDate": "1997-04-29",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39039",
+        "decisionAdoptionDate": "1997-04-29",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1997-07-16"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.912-DEC39039-ATT4",
+            "attachmentLanguage": "DE",
+            "language": "de",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-00912-020-1-19970429-0310-pub-de",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m912_de.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "Schiedsverfahren*",
+        "language": "DE",
+        "context": "...rträge). für den fall, daß eine einigung zwischen den gesellschaftern nicht zustande kommt, ist ein schiedsverfahren vorgesehen und, soweit dieses ohne ergebnis bleibt, kann das ausscheiden von siemens von beiden sei..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m912_de.pdf",
+    "_processedAt": "2026-05-24T16:08:17.447284+00:00"
+  },
+  {
+    "caseNumber": "M.2413",
+    "caseTitle": "BHP / BILLITON (see ECSC.1356)",
+    "caseCompanies": [
+      "BHP / BILLITON",
+      "BHP / BILLITON (see ECSC.1356)"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "B.07.29 - Mining of other non-ferrous metal ores"
+    ],
+    "caseInitiationDate": "2001-05-10",
+    "caseNotificationDate": "2001-05-10",
+    "caseDeadlineDate": "2001-06-14",
+    "caseLastDecisionDate": "2001-06-14",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "40838",
+        "decisionAdoptionDate": "2001-06-14",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "2001-08-24"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.2413-DEC40838-ATT4",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-02413-020-1-20010614-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m2413_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...ed \"non-finance-related\" contracts (about 55-65% of the market). under the former contract type, an arbitration mechanism ensures that annually-variable contract terms are reached, even where the concentrate sup..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2413_en.pdf",
+    "_processedAt": "2026-05-24T16:08:37.436387+00:00"
+  },
+  {
+    "caseNumber": "M.1097",
+    "caseTitle": "WACKER / AIR PRODUCTS",
+    "caseCompanies": [
+      "WACKER / AIR PRODUCTS"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.20 - Manufacture of chemicals and chemical products"
+    ],
+    "caseInitiationDate": "1998-07-02",
+    "caseNotificationDate": "1998-07-02",
+    "caseDeadlineDate": "1998-08-04",
+    "caseLastDecisionDate": "1998-08-04",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39294",
+        "decisionAdoptionDate": "1998-08-04",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1998-10-22"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1097-DEC39294-ATT3",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01097-020-1-19980804-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1097_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...ses of disagreement between the parties the casting votes can only be exercised after a three stage arbitration and reconciliation procedure, stretching over a ninety days period, has been complied 1 with. 12. i..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1097_en.pdf",
+    "_processedAt": "2026-05-24T16:12:10.704839+00:00"
+  },
+  {
+    "caseNumber": "M.358",
+    "caseTitle": "PILKINGTON / SIV",
+    "caseCompanies": [
+      "PILKINGTON / SIV"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.23.11 - Manufacture of flat glass"
+    ],
+    "caseInitiationDate": "1993-07-30",
+    "caseNotificationDate": "1993-07-30",
+    "caseDeadlineDate": "1994-01-14",
+    "caseLastDecisionDate": "1993-12-21",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "38360",
+        "decisionAdoptionDate": "1993-12-21",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1994-06-25"
+        ],
+        "decisionTypes": [
+          "Art. 8(2)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.358-DEC38360-ATT3",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 8(2) -  - m0358",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m358_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...der the sole control of glaverbel. with regard to ilved, siv and glaverbel are currently engaged in arbitration in geneva as well as in court proceedings in brussels and vasto (italy). saint gobain and asahi (th..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m358_en.pdf",
+    "_processedAt": "2026-05-24T16:12:20.092482+00:00"
+  },
+  {
+    "caseNumber": "M.1855",
+    "caseTitle": "SINGAPORE AIRLINES / VIRGIN ATLANTIC",
+    "caseCompanies": [
+      "SINGAPORE AIRLINES / VIRGIN ATLANTIC"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "H.51.10 - Passenger air transport"
+    ],
+    "caseInitiationDate": "2000-02-23",
+    "caseNotificationDate": "2000-02-23",
+    "caseDeadlineDate": "2000-03-24",
+    "caseLastDecisionDate": "2000-03-23",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "40207",
+        "decisionAdoptionDate": "2000-03-23",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "2002-05-07"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1855-DEC40207-ATT4",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01855-020-1-20000323-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1855_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...jority of the members on the board, sia has joint control of virgin through its veto rights and the arbitration procedure which is provided for the case of disagreement in certain strategic business decisions. 7..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1855_en.pdf",
+    "_processedAt": "2026-05-24T16:14:08.066076+00:00"
+  },
+  {
+    "caseNumber": "M.1455",
+    "caseTitle": "GRUNER + JAHR / FINANCIAL TIMES / JV",
+    "caseCompanies": [
+      "GRUNER + JAHR / FINANCIAL TIMES / JV"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "J.58.13 - Publishing of newspapers",
+      "S.96.0 - Other personal service activities"
+    ],
+    "caseInitiationDate": "1999-03-12",
+    "caseNotificationDate": "1999-03-12",
+    "caseDeadlineDate": "1999-04-20",
+    "caseLastDecisionDate": "1999-04-20",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39710",
+        "decisionAdoptionDate": "1999-04-20",
+        "decisionOfficialJournalPublicationsPublishedDates": [],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1455-DEC39710-ATT3",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01455-020-1-19990420-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1455_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...d for by the partnership agreement. in the case of deadlock recourse would be made to mediation and arbitration procedures. should, however, the matter remain unresolved for more than […], the joint venture shal..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1455_en.pdf",
+    "_processedAt": "2026-05-24T16:15:39.585198+00:00"
+  },
+  {
+    "caseNumber": "M.866",
+    "caseTitle": "CEREOL / ÖSAT - ÖLMÜHLE",
+    "caseCompanies": [
+      "CEREOL / ÖSAT - ÖLMÜHLE"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.10.41 - Manufacture of oils and fats"
+    ],
+    "caseInitiationDate": "1997-02-27",
+    "caseNotificationDate": "1997-02-27",
+    "caseDeadlineDate": "1997-04-03",
+    "caseLastDecisionDate": "1997-04-02",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "38977",
+        "decisionAdoptionDate": "1997-04-02",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1997-05-14"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.866-DEC38977-ATT4",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-00866-020-1-19970402-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m866_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...n the point of the disagreement. however, such powers can only be exercised after several stages of arbitration and attempts at reconciliation 1 . 9. as a result, both parties are able to influence strategic dec..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m866_en.pdf",
+    "_processedAt": "2026-05-24T16:17:37.046408+00:00"
+  },
+  {
+    "caseNumber": "M.1035",
+    "caseTitle": "HOCHTIEF / AER RIANTA / DÜSSELDORF AIRPORT",
+    "caseCompanies": [
+      "HOCHTIEF / AER RIANTA / DÜSSELDORF AIRPORT"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "H.51 - Air transport"
+    ],
+    "caseInitiationDate": "1997-11-20",
+    "caseNotificationDate": "1997-11-20",
+    "caseDeadlineDate": "1997-12-22",
+    "caseLastDecisionDate": "1997-12-22",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39211",
+        "decisionAdoptionDate": "1997-12-22",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1998-02-26"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1035-DEC39211-ATT5",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01035-020-1-19971222-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1035_19971222_310_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...h shareholders in all important business decisions (including initial and annual business plan). an arbitration mechanism has been agreed in cases of deadlock. therefore fgd is jointly controlled by airport part..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1035_19971222_310_en.pdf",
+    "_processedAt": "2026-05-24T16:18:15.866266+00:00"
+  },
+  {
+    "caseNumber": "M.1042",
+    "caseTitle": "EASTMAN KODAK / SUN CHEMICAL",
+    "caseCompanies": [
+      "EASTMAN KODAK / SUN CHEMICAL",
+      "KODAK / POLYCHROME"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.20.59 - Manufacture of other chemical products n.e.c."
+    ],
+    "caseInitiationDate": "1997-12-01",
+    "caseNotificationDate": "1997-12-01",
+    "caseDeadlineDate": "1998-01-15",
+    "caseLastDecisionDate": "1998-01-15",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39221",
+        "decisionAdoptionDate": "1998-01-15",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1998-01-30"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1042-DEC39221-ATT3",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01042-020-1-19980115-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1042_19980115_310_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...striction for all major policy and strategic decisions. any deadlock will ultimately be resolved by arbitration. full function joint venture 7. the joint venture will have sufficient financial and other resources..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1042_19980115_310_en.pdf",
+    "_processedAt": "2026-05-24T16:18:22.157664+00:00"
+  },
+  {
+    "caseNumber": "M.1309",
+    "caseTitle": "MATRA / AEROSPATIALE",
+    "caseCompanies": [
+      "MATRA / AEROSPATIALE"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "O.84.22 - Defence activities",
+      "C.30.3 - Manufacture of air and spacecraft and related machinery"
+    ],
+    "caseInitiationDate": "1999-03-11",
+    "caseNotificationDate": "1999-03-11",
+    "caseDeadlineDate": "1999-04-28",
+    "caseLastDecisionDate": "1999-04-28",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39533",
+        "decisionAdoptionDate": "1999-04-28",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1999-05-13"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1309-DEC39533-ATT4",
+            "attachmentLanguage": "FR",
+            "language": "fr",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01309-020-1-19990428-0310-pub-fr",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1309_fr.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "clause compromissoire*",
+        "language": "FR",
+        "context": "...parentes et non discriminatoires. a cet effet, les parties se proposent de créer, sur la base de la clause compromissoire prévue par le nouveau code de procédure civile français, une instance d’arbitrage indépendante et c..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1309_fr.pdf",
+    "_processedAt": "2026-05-24T16:20:33.529865+00:00"
+  },
+  {
+    "caseNumber": "M.1368",
+    "caseTitle": "FORD / ZF",
+    "caseCompanies": [
+      "FORD / ZF"
+    ],
+    "caseInstrument": "Merger",
+    "caseRegulation": "Council Regulation 4064/89",
+    "caseSimplified": "Normal procedure",
+    "caseSectors": [
+      "C.29.32 - Manufacture of other parts and accessories for motor vehicles"
+    ],
+    "caseInitiationDate": "1998-11-20",
+    "caseNotificationDate": "1998-11-20",
+    "caseDeadlineDate": "1998-12-23",
+    "caseLastDecisionDate": "1998-12-21",
+    "caseAttachments": [],
+    "decisions": [
+      {
+        "decisionNumber": "39607",
+        "decisionAdoptionDate": "1998-12-21",
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "1999-02-06"
+        ],
+        "decisionTypes": [
+          "Art. 6(1)(b)"
+        ],
+        "decisionAttachments": [
+          {
+            "metadataReference": "M.1368-DEC39607-ATT4",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - mtf-dec-m-01368-020-1-19981221-0310-pub-en",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m1368_en.pdf"
+          }
+        ]
+      }
+    ],
+    "_matchedKeywords": [
+      {
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...two thirds will be required but should the deadlock persist recourse would be made to mediation and arbitration procedures. therefore, the joint venture will be jointly controlled by the parents as none of them..."
+      }
+    ],
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1368_en.pdf",
+    "_processedAt": "2026-05-24T16:21:42.596589+00:00"
+  },
+  {
     "caseNumber": "M.3333",
     "caseTitle": "SONY / BMG (4064)",
     "caseCompanies": [
@@ -79,7 +609,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3333_20040719_590_en.pdf",
-    "_processedAt": "2026-05-23T18:59:32.705284+00:00"
+    "_processedAt": "2026-05-24T16:29:03.968897+00:00"
   },
   {
     "caseNumber": "M.4139",
@@ -132,7 +662,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4139_20060331_20310_en.pdf",
-    "_processedAt": "2026-05-23T19:21:28.262929+00:00"
+    "_processedAt": "2026-05-24T16:30:08.564846+00:00"
   },
   {
     "caseNumber": "M.3664",
@@ -180,7 +710,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3664_20050302_20310_en.pdf",
-    "_processedAt": "2026-05-23T19:34:33.488349+00:00"
+    "_processedAt": "2026-05-24T16:32:15.859218+00:00"
   },
   {
     "caseNumber": "M.4495",
@@ -206,32 +736,34 @@
     ],
     "decisions": [
       {
-        "decisionNumber": "43623",
+        "decisionNumber": "43624",
         "decisionAdoptionDate": "2007-02-06",
-        "decisionOfficialJournalPublicationsPublishedDates": [],
+        "decisionOfficialJournalPublicationsPublishedDates": [
+          "2007-03-16"
+        ],
         "decisionTypes": [
-          "Art. 9(3) partial referral"
+          "Art. 6(1)(b)"
         ],
         "decisionAttachments": [
           {
-            "metadataReference": "M.4495-DEC43623-ATT9",
-            "attachmentLanguage": "DE",
-            "language": "de",
-            "attachmentName": "Art. 9(3) partial referral -  - m4495-9(3)-DE",
-            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m4495_20070206_20230_de.pdf"
+            "metadataReference": "M.4495-DEC43624-ATT10",
+            "attachmentLanguage": "EN",
+            "language": "en",
+            "attachmentName": "Art. 6(1)(b) -  - m4495",
+            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m4495_20070206_20310_en.pdf"
           }
         ]
       }
     ],
     "_matchedKeywords": [
       {
-        "keyword": "Schiedsverfahren*",
-        "language": "DE",
-        "context": "...iese entscheidungen blockieren können. sollte keine einigung erreicht werden, sieht der vertrag ein schiedsverfahren mit drei schiedsrunden vor, bei der alle drei gesellschafter gleichermaßen vertreten sind. sollte n..."
+        "keyword": "arbitrat*",
+        "language": "EN",
+        "context": "...e able to block decisions. in the event that no consensus can be reached, the agreement foresees an arbitration mechanism with three arbitration rounds in which all three parties are equally represented. if no u..."
       }
     ],
-    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4495_20070206_20230_de.pdf",
-    "_processedAt": "2026-05-23T19:35:37.767188+00:00"
+    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4495_20070206_20310_en.pdf",
+    "_processedAt": "2026-05-24T16:33:25.861021+00:00"
   },
   {
     "caseNumber": "M.3858",
@@ -280,53 +812,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3858_20050720_20310_en.pdf",
-    "_processedAt": "2026-05-23T19:40:25.941828+00:00"
-  },
-  {
-    "caseNumber": "M.3870",
-    "caseTitle": "CARLYLE / OTOR",
-    "caseCompanies": [
-      "CARLYLE / OTOR"
-    ],
-    "caseInstrument": "Merger",
-    "caseRegulation": "Council Regulation 139/2004",
-    "caseSimplified": "Simplified procedure",
-    "caseSectors": [
-      "C.17.12 - Manufacture of paper and paperboard"
-    ],
-    "caseInitiationDate": "2005-07-11",
-    "caseNotificationDate": "2005-07-11",
-    "caseDeadlineDate": "2005-08-17",
-    "caseLastDecisionDate": "2005-08-09",
-    "caseAttachments": [],
-    "decisions": [
-      {
-        "decisionNumber": "42398",
-        "decisionAdoptionDate": "2005-06-27",
-        "decisionOfficialJournalPublicationsPublishedDates": [],
-        "decisionTypes": [
-          "Art. 7(3)"
-        ],
-        "decisionAttachments": [
-          {
-            "metadataReference": "M.3870-DEC42398-ATT15",
-            "attachmentLanguage": "FR",
-            "language": "fr",
-            "attachmentName": "Art. 7(3) (PN) -  - m3870-7(3)-FR",
-            "attachmentLink": "https://ec.europa.eu/competition/mergers/cases/decisions/m3870_15_2.pdf"
-          }
-        ]
-      }
-    ],
-    "_matchedKeywords": [
-      {
-        "keyword": "tribunal arbitral*",
-        "language": "FR",
-        "context": "..., marquée par de nombreuses requêtes et interventions des fondateurs d’otor. 6. le 23 mars 2005, le tribunal arbitral conclut finalement que les conditions d’exercice des obligations convertibles d’otor étaient réunie..."
-      }
-    ],
-    "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3870_15_2.pdf",
-    "_processedAt": "2026-05-23T19:40:36.809686+00:00"
+    "_processedAt": "2026-05-24T16:38:19.442927+00:00"
   },
   {
     "caseNumber": "M.6828",
@@ -381,7 +867,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6828_20130620_20310_3232613_EN.pdf",
-    "_processedAt": "2026-05-23T19:45:12.402090+00:00"
+    "_processedAt": "2026-05-24T16:43:12.341199+00:00"
   },
   {
     "caseNumber": "M.7631",
@@ -435,7 +921,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7631_20150902_20310_4570768_EN.pdf",
-    "_processedAt": "2026-05-23T19:46:11.792143+00:00"
+    "_processedAt": "2026-05-24T16:44:09.555349+00:00"
   },
   {
     "caseNumber": "M.6381",
@@ -485,7 +971,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6381_20120213_20310_2277480_EN.pdf",
-    "_processedAt": "2026-05-23T19:47:33.271609+00:00"
+    "_processedAt": "2026-05-24T16:45:31.561815+00:00"
   },
   {
     "caseNumber": "M.7047",
@@ -537,7 +1023,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7047_687_2.pdf",
-    "_processedAt": "2026-05-23T19:52:21.237958+00:00"
+    "_processedAt": "2026-05-24T16:50:27.371300+00:00"
   },
   {
     "caseNumber": "M.6095",
@@ -589,7 +1075,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6095_417_2.pdf",
-    "_processedAt": "2026-05-23T19:56:19.960492+00:00"
+    "_processedAt": "2026-05-24T17:43:01.187878+00:00"
   },
   {
     "caseNumber": "M.8137",
@@ -642,7 +1128,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8137_359_2.pdf",
-    "_processedAt": "2026-05-23T20:00:35.366956+00:00"
+    "_processedAt": "2026-05-24T17:47:54.931496+00:00"
   },
   {
     "caseNumber": "M.8146",
@@ -695,7 +1181,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8146_288_3.pdf",
-    "_processedAt": "2026-05-23T20:00:53.330973+00:00"
+    "_processedAt": "2026-05-24T17:48:17.026943+00:00"
   },
   {
     "caseNumber": "M.10926",
@@ -752,7 +1238,7 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202433/M_10926_10201036_3861_3.pdf",
-    "_processedAt": "2026-05-23T20:24:39.662759+00:00"
+    "_processedAt": "2026-05-24T18:15:21.859928+00:00"
   },
   {
     "caseNumber": "M.11125",
@@ -805,6 +1291,6 @@
       }
     ],
     "_matchedPdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202409/M_11125_9939967_581_3.pdf",
-    "_processedAt": "2026-05-23T20:28:51.044828+00:00"
+    "_processedAt": "2026-05-24T18:20:05.541646+00:00"
   }
 ]
