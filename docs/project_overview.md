@@ -1,6 +1,6 @@
 # Project Overview — EU Merger Arbitration Pipeline
 
-**Last updated:** 2026-05-24  
+**Last updated:** 2026-05-25  
 **Companion docs:** [`progress.md`](progress.md) (implementation log), [`architecture.md`](architecture.md) (target design)
 
 ---
@@ -36,32 +36,32 @@ flowchart LR
 
 | Planned component | Status |
 |-------------------|--------|
-| Download EC merger JSON | **Done** (`ingestion/download_json.py`) |
-| Explore JSON structure | **Done** (`ingestion/inspect_json.py`) |
-| PDF keyword search | **Done** (`ingestion/ingest.py`) |
+| Download EC merger JSON | **Done** (`scripts/ingestion/download_json.py`) |
+| Explore JSON structure | **Done** (`scripts/ingestion/inspect_json.py`) |
+| PDF keyword search | **Done** (`scripts/ingestion/ingest.py`) |
 | Keyword configuration (no code change) | **Done** (`config/keywords.txt`) |
 | Processed hits output | **Done** (`data/processed/`) |
 | PostgreSQL + `staging` layer | **Not started** (`data/staging/` empty) |
-| dbt models | **Not started** (in `requirements.txt` only) |
+| dbt models | **Not started** (in `scripts/requirements.txt` only) |
 | Airflow orchestration | **Not started** |
 | Dashboard | **Not started** |
 | Docker Compose stack | **Not started** |
 
-**Latest full production ingest** (`logs/ingest_summary.json`, 2026-05-23):
+**Latest full production ingest** (`logs/ingest_summary.json`, 2026-05-24):
 
 | Metric | Value |
 |--------|------:|
-| Total cases in JSON | 10,225 |
-| Relevant cases (Art. 6(1)(b) or Art. 8(2)) | 9,038 |
-| Relevant decisions | 9,041 |
-| Matched cases | 15 |
-| Matched decisions | 15 |
+| Total cases in JSON | 10,229 |
+| Relevant cases (Art. 6(1)(b) or Art. 8(2)) | 9,043 |
+| Relevant decisions | 9,046 |
+| Matched cases | 25 |
+| Matched PDFs (`_matches` entries) | 25 |
 
 Phase 1 **ingestion is complete**; warehouse, orchestration, and dashboard are not built yet.
 
 ---
 
-## 2. Ingest code review (`ingestion/ingest.py`)
+## 2. Ingest code review (`scripts/ingestion/ingest.py`)
 
 ### Verdict
 
@@ -71,28 +71,28 @@ The ingest implementation is **correct for its documented design** and aligns wi
 
 | Behavior | Implementation |
 |----------|----------------|
-| Case filter | Only cases with at least one Art. 6(1)(b) or Art. 8(2) decision enter the main loop |
-| PDF scope | `process_case()` searches PDFs only on decisions whose types include Art. 6(1)(b) or Art. 8(2) |
+| Case filter | Substring match on `decisionTypes` labels: `"6(1)(b)"` or `"8(2)"` (captures variants such as “with conditions & obligations”, “Modification of Art. 8(2)”) |
+| PDF scope | `process_case()` searches PDFs only on decisions whose types match those substrings |
 | Language rules | Each PDF uses rules for its `attachmentLanguage` only; no cross-language fallback |
 | Early skip | Skips cases when no attachment language has rules (languages normalized with `.upper()`) |
 | Keywords | Wildcard and AND rules compiled once; config-driven via `keywords.txt` |
-| First-match policy | Stops after first matching PDF per decision and first matching decision per case (intentional) |
-| Checkpoint (full runs) | Saves processed `caseNumber` after each case; resume skips completed cases |
+| All matches per case | Collects every matching PDF across qualifying decisions (no early stop after first hit) |
+| Checkpoint (full runs) | Keyed by `attachmentLink` URL; saved after **each** PDF; new PDFs on existing cases are picked up on re-run |
 | Hit reload on resume | Loads existing `arbitration_hits.jsonl` when checkpoint exists |
 | Test isolation | `TEST_LIMIT > 0` disables checkpoint read/write; writes to separate `test_*` files |
-| Outputs | Production vs test paths are distinct; production files are not overwritten by test runs |
+| Outputs | Production vs test paths are distinct; `TEST_LIMIT` summary counts use the sliced case set only |
+| Hit record | `_matches` list per case (decision index, keywords, `pdfUrl`); matched decisions only in output |
 
 ### Known limitations (by design or documented)
 
 | Limitation | Notes |
 |------------|--------|
-| Crash before write | Matches found after the last checkpoint save but before Step 6 output write are **lost** on resume; checkpoint still skips those cases |
-| First-match only | Does not record multiple arbitration mentions per case |
+| Crash before write | Matches found after the last checkpoint save but before Step 5 output write are **lost** on resume; checkpoint still skips those PDFs |
 | Keyword semantics | Text match ≠ legal “commitment arbitration mechanism”; manual review required |
 | No PDF retries | Download failures logged at DEBUG and skipped |
 | Early skip scope | Language set for skip includes attachments on **all** decision types (minor edge case; see progress.md) |
-| `TEST_LIMIT` summary | `test_ingest_summary.json` still uses full-dataset `totalRelevantDecisions` (9041) while only processing N cases |
-| Download refresh | `download_json.py` skips if file exists; refresh deferred to Airflow |
+| `matchedDecisions` in summary | Counts `_matches` entries (one per matching PDF), not unique decision records |
+| Download refresh | Every run re-downloads and validates JSON; ETag / `Last-Modified` skip logic planned for Airflow |
 
 ### Alignment: `progress.md` vs code
 
@@ -102,7 +102,7 @@ The ingest implementation is **correct for its documented design** and aligns wi
 | Checkpoint + hit reload | Yes |
 | Crash limitation | Yes (documented in both) |
 | `TEST_LIMIT` / separate test outputs | Yes |
-| First full run stats | Yes (matches `ingest_summary.json`) |
+| Substring relevance filter | Yes |
 | NL keyword changes | Yes (`arbitrag*` commented; specific NL terms in `keywords.txt`) |
 | PT ambiguity note | Documented in progress; `PT: arbitrag*` still active in config |
 
@@ -113,7 +113,6 @@ The ingest implementation is **correct for its documented design** and aligns wi
 ```
 eu-merger-arbitration-pipeline-test/
 ├── README.md
-├── requirements.txt
 ├── .gitignore
 ├── config/
 │   └── keywords.txt
@@ -130,15 +129,17 @@ eu-merger-arbitration-pipeline-test/
 │   ├── architecture.md
 │   ├── progress.md
 │   └── project_overview.md
-├── ingestion/
-│   ├── download_json.py
-│   ├── inspect_json.py
-│   ├── inspect_json_output.txt
-│   └── ingest.py
-└── logs/
-    ├── ingest_summary.json             # production run stats
-    ├── test_ingest_summary.json        # TEST_LIMIT runs
-    └── checkpoint.json                 # runtime only; deleted on success
+├── logs/
+│   ├── ingest_summary.json             # production run stats
+│   ├── test_ingest_summary.json        # TEST_LIMIT runs
+│   └── checkpoint.json                 # runtime only; deleted on success
+└── scripts/
+    ├── requirements.txt
+    └── ingestion/
+        ├── download_json.py
+        ├── inspect_json.py
+        ├── inspect_json_output.txt
+        └── ingest.py
 ```
 
 A local `venv/` may exist but is gitignored.
@@ -152,24 +153,27 @@ A local `venv/` may exist but is gitignored.
 | File | Role |
 |------|------|
 | `README.md` | Business context, architecture diagram, planned stack |
-| `requirements.txt` | `requests`, `pdfplumber`; planned `dbt-postgres`, `apache-airflow`; `pytest` |
 | `.gitignore` | Excludes `.env`, venv, caches; `data/` may be committed (~35 MB JSON) |
+
+### `scripts/requirements.txt`
+
+`requests`, `pdfplumber`; planned `dbt-postgres`, `apache-airflow`; `pytest`.
 
 ### `config/keywords.txt`
 
 Multilingual arbitration search rules (`LANG: term`). Wildcards (`*`), AND (`LANG: a*:b*`), comments. Broad rules commented for FR, FI, SV, NL with narrower replacements where needed. Edit this file only to tune search terms.
 
-### `ingestion/download_json.py`
+### `scripts/ingestion/download_json.py`
 
-Downloads EC `case-data-M.json` to `data/raw/`; skips if file exists. Run: `python ingestion/download_json.py`.
+Downloads EC `case-data-M.json` to `data/raw/` on every run. Uses a `.tmp` file, validates JSON (parse + ≥1000 cases), then replaces the existing file; on failure the old file is kept. Run: `python scripts/ingestion/download_json.py`.
 
-### `ingestion/inspect_json.py`
+### `scripts/ingestion/inspect_json.py`
 
-Explores JSON structure and statistics for Art. 6(1)(b) / Art. 8(2) cases. Writes `ingestion/inspect_json_output.txt`.
+Explores JSON structure and statistics for cases with `6(1)(b)` or `8(2)` in decision labels. Writes `scripts/ingestion/inspect_json_output.txt`. Run: `python scripts/ingestion/inspect_json.py`.
 
-### `ingestion/ingest.py`
+### `scripts/ingestion/ingest.py`
 
-Main pipeline (~510 lines). See [§2](#2-ingest-code-review-ingestioningestpy) and [`progress.md` §5](progress.md) for full logic.
+Main pipeline (~540 lines). See [§2](#2-ingest-code-review-scriptsingestioningestpy) and [`progress.md`](progress.md) for full logic.
 
 **Production outputs:**
 
@@ -185,7 +189,7 @@ Main pipeline (~510 lines). See [§2](#2-ingest-code-review-ingestioningestpy) a
 
 ### `data/processed/arbitration_hits.jsonl`
 
-One JSON object per line per matched case. Includes case metadata, matched decisions only, and `_matchedKeywords`, `_matchedPdfUrl`, `_processedAt`. Current production file: **15 hits**.
+One JSON object per line per matched case. Includes case metadata, matched decisions only, and `_matches` (per-PDF keyword hits), `_processedAt`. Current production file: **25 hits** (re-run after keyword or code changes may update this).
 
 ### `docs/progress.md`
 
@@ -202,7 +206,7 @@ Target metrics, DB layers (`staging` / `intermediate` / `mart`), risks — mostl
 | Metric (architecture) | Status |
 |-----------------------|--------|
 | Arbitration mention yes/no per decision | **Partial** — hits exist; denominator in `ingest_summary.json` |
-| Share `matchedDecisions / totalRelevantDecisions` | **Partial** — summary has both values |
+| Share `matchedDecisions / totalRelevantDecisions` | **Partial** — summary has both values (`matchedDecisions` = matching PDF count) |
 | Count/share by month/year | **No** — needs dbt time aggregation |
 | Sector (NACE) distribution | **Partial** — `caseSectors` on hits; needs mart |
 | Sector trends over time | **No** — needs mart + dashboard |
@@ -211,20 +215,22 @@ Target metrics, DB layers (`staging` / `intermediate` / `mart`), risks — mostl
 
 ## 6. Suggested run order
 
-```bash
-pip install -r requirements.txt
+Run from the **repository root**:
 
-python ingestion/download_json.py
-python ingestion/inspect_json.py          # optional
+```bash
+pip install -r scripts/requirements.txt
+
+python scripts/ingestion/download_json.py
+python scripts/ingestion/inspect_json.py          # optional
 
 # Test (does not touch production outputs or checkpoint)
 # Linux/macOS:
-TEST_LIMIT=20 python ingestion/ingest.py
+TEST_LIMIT=20 python scripts/ingestion/ingest.py
 # Windows PowerShell:
-$env:TEST_LIMIT=20; python ingestion/ingest.py
+$env:TEST_LIMIT=20; python scripts/ingestion/ingest.py
 
 # Full production run
-python ingestion/ingest.py
+python scripts/ingestion/ingest.py
 ```
 
 Review production results in `data/processed/arbitration_hits_readable.json` and `logs/ingest_summary.json`.
@@ -237,7 +243,7 @@ After keyword changes: delete `logs/checkpoint.json` if present; delete or back 
 
 ### Ingestion quality (before trusting published stats)
 
-1. Manual review of all 15 hits in `arbitration_hits_readable.json` (false positives, PT/EN context).
+1. Manual review of all hits in `arbitration_hits_readable.json` (false positives, PT/EN context).
 2. Refine `keywords.txt` based on review; re-run full ingest.
 3. Optional: append hits to jsonl after each match to survive crashes without re-scan gaps.
 
@@ -253,13 +259,13 @@ After keyword changes: delete `logs/checkpoint.json` if present; delete or back 
 8. Extract shared helpers (`first`, `parse_label`, relevance checks) shared by `inspect_json.py` and `ingest.py`.
 9. pytest fixtures for `load_keywords()`, `is_relevant_case()`, `search_pdf()`.
 10. PDF download retries and polite rate limiting.
-11. ETag / `Last-Modified` refresh in `download_json.py` (planned for Airflow stage).
+11. ETag / `Last-Modified` conditional download in `download_json.py` (planned for Airflow stage).
 
 ---
 
 ## 8. Summary
 
-The repository delivers a **working phase-1 pipeline**: download EC merger open data, filter to conditional-clearance decision types, search decision PDFs in many EU languages via configurable keywords, and emit production and test outputs with checkpoint resume for full runs.
+The repository delivers a **working phase-1 pipeline**: download EC merger open data (with validation), filter to conditional-clearance decision types via label substrings, search decision PDFs in many EU languages via configurable keywords, and emit production and test outputs with PDF-level checkpoint resume for full runs.
 
 `ingest.py` and `progress.md` are **in sync**. The main gaps are **business validation of hits**, **crash-safe hit persistence** (optional improvement), and **everything after ingestion** (PostgreSQL, dbt, Airflow, dashboard).
 
