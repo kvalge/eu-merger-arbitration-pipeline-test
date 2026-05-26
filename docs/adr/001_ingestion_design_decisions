@@ -1,0 +1,156 @@
+# ADR 001 — Ingestion pipeline design decisions
+ 
+**Status:** accepted  
+**Date:** 2026-05-25
+ 
+---
+ 
+## Context
+ 
+The European Commission publishes merger decision data as a single JSON file (~35 MB)
+containing ~10,000 cases. Each conditional decision (Art. 6(1)(b) or Art. 8(2)) may
+have PDF attachments containing the full decision text. The goal is to find which
+decisions mention an arbitration mechanism.
+ 
+---
+ 
+## Decisions
+ 
+### 1. Process order
+ 
+```
+download_json.py → inspect_json.py → ingest.py
+```
+ 
+`download_json.py` and `ingest.py` are kept as separate scripts (not combined) so that:
+- Each step can be run and debugged independently
+- Airflow can schedule and retry each step separately
+- The JSON file can be inspected before PDF processing begins
+`inspect_json.py` is a one-off analysis tool, not part of the automated pipeline.
+ 
+---
+ 
+### 2. Download: temporary file before replace
+ 
+**Decision:** download to `case-data-M.json.tmp`, validate, then rename to replace the existing file.
+ 
+**Why:** if the download fails midway, the existing file is left untouched. Without this,
+a partial download would silently replace valid data with a broken file.
+ 
+**Validation:** `json.load()` must succeed and the file must contain at least 1000 cases.
+This is intentionally simple — complex schema validation is deferred to dbt tests.
+ 
+---
+ 
+### 3. Relevant case filter: substring match, not exact match
+ 
+**Decision:** filter cases using substring match on `"6(1)(b)"` and `"8(2)"` rather than
+exact label match.
+ 
+**Why:** the source data contains multiple label variants for the same article type:
+- `"Art. 6(1)(b)"`
+- `"Art. 6(1)(b) with conditions & obligations"`
+- `"Modification of Art. 6(1)(b) with conditions & obligations"`
+An exact match would miss conditional and modified decisions, which are precisely the
+most relevant ones for this research question.
+ 
+---
+ 
+### 4. Keyword search: language-keyed rules
+ 
+**Decision:** each PDF is searched using only the rules for its `attachmentLanguage`.
+No fallback to another language if rules are missing.
+ 
+**Why:** falling back to English rules for a French PDF would produce false positives
+(e.g. searching `arbitrat*` in a French text). A missing language means the PDF
+is intentionally out of scope, not an error.
+ 
+**Implication:** if rules for a language are commented out in `keywords.txt`, PDFs
+in that language are silently skipped. This is by design — commenting out is the
+mechanism for disabling a language.
+ 
+---
+ 
+### 5. Keyword rules: wildcards and AND conditions in config file
+ 
+**Decision:** keyword rules are defined in `config/keywords.txt`, not in code.
+Wildcards (`*`) and AND conditions (`:` separator) are supported.
+ 
+**Why:** the set of search terms needs to be adjustable without code changes —
+legal terminology varies and false positives require tuning. Keeping rules in a
+plain text file makes them editable by non-developers.
+ 
+---
+ 
+### 6. Checkpoint key: `attachmentLink` URL
+ 
+**Decision:** the checkpoint tracks processed PDF URLs (`attachmentLink`), not case numbers
+or `metadataReference` values.
+ 
+**Why:**
+- `metadataReference` has 2 known duplicates in source data — not safe as a unique key
+- Case-level tracking would re-process all PDFs in a case if any new PDF is added
+- URL-level tracking means only new PDFs are processed on data refresh, regardless
+  of whether the case was previously seen
+**Implication:** on data refresh (`download_json.py` re-run followed by `ingest.py`),
+only PDFs with URLs not in the checkpoint are downloaded and searched.
+ 
+---
+ 
+### 7. Checkpoint timing: save after every PDF
+ 
+**Decision:** checkpoint is written to disk after every single PDF is processed.
+ 
+**Why:** saves progress at maximum granularity. If the process crashes, at most one
+PDF's work is lost. The tradeoff is frequent disk writes, which is acceptable given
+sequential (non-parallel) processing.
+ 
+**Known limitation:** hits are written to disk only at the end of the full run. If
+the process crashes before the final write, matches from that run are lost even though
+the checkpoint marks those PDFs as done. This is a known limitation accepted for now;
+per-PDF hit flushing would require append-mode JSONL writes and is deferred.
+ 
+---
+ 
+### 8. All matching decisions collected per case
+ 
+**Decision:** all qualifying decisions in a case are searched; all matches are collected.
+No early stop after the first match.
+ 
+**Why:** a case may have both an Art. 6(1)(b) and an Art. 8(2) decision (e.g. initial
+clearance followed by a modification). Stopping at the first match would under-report
+the full scope of arbitration mentions in the case.
+ 
+---
+ 
+### 9. Output: two formats
+ 
+**Decision:** results written as both `.jsonl` (one object per line) and
+`_readable.json` (indented JSON array).
+ 
+**Why:**
+- `.jsonl` is the format expected by dbt and most data tools — each line is a valid JSON object
+- `_readable.json` is for human review on GitHub — indented format is legible in a browser
+**Test runs** write to `test_arbitration_hits.*` files and never overwrite production output.
+ 
+---
+ 
+### 10. No parallelism
+ 
+**Decision:** PDFs are processed sequentially (one at a time), not in parallel threads.
+ 
+**Why:**
+- Parallel processing makes debugging harder — errors appear in random order
+- The checkpoint logic is simpler without thread-safety concerns
+- Parallelism can be added later at the Airflow level (multiple DAG runs or task concurrency)
+---
+ 
+## Deferred decisions
+ 
+| Topic | Deferred to |
+|-------|-------------|
+| Automatic JSON refresh (ETag / Last-Modified) | Airflow setup |
+| PDF download retries and rate limiting | Airflow setup |
+| JSON schema validation | dbt tests |
+| Per-PDF hit flushing (crash-safe matches) | future iteration if needed |
+| NLP or semantic matching to reduce false positives | future iteration if needed |
