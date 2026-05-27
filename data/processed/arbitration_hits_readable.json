@@ -42,7 +42,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -53,7 +53,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2050_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:10:24.699422+00:00"
+    "_processedAt": "2026-05-27T07:25:22.417831+00:00"
   },
   {
     "caseNumber": "M.2903",
@@ -168,7 +168,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -184,7 +184,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2903_20030430_600_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:11:30.825445+00:00"
+    "_processedAt": "2026-05-27T07:26:10.919860+00:00"
   },
   {
     "caseNumber": "M.1601",
@@ -292,7 +292,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välitysmenettely*",
@@ -303,7 +303,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_fi.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -314,7 +314,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_el.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "skiljeförfar*",
@@ -325,7 +325,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_sv.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "voldgift*",
@@ -336,7 +336,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_da.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsverfahren*",
@@ -347,7 +347,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_de.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -358,7 +358,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "procédure arbitrale*",
@@ -369,7 +369,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_fr.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -380,7 +380,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_pt.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -391,7 +391,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1601_es.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:11:59.565105+00:00"
+    "_processedAt": "2026-05-27T07:26:38.734082+00:00"
   },
   {
     "caseNumber": "M.2861",
@@ -507,7 +507,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välimies*",
@@ -518,7 +518,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2861_20030430_600_fi.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:13:25.725004+00:00"
+    "_processedAt": "2026-05-27T07:27:51.916256+00:00"
   },
   {
     "caseNumber": "M.2876",
@@ -634,7 +634,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "voldgift*",
@@ -645,7 +645,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_da.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -656,7 +656,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_en.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -672,7 +672,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_es.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -683,7 +683,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_pt.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välimies*",
@@ -699,7 +699,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_fi.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -710,7 +710,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_el.pdf"
       },
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrageprocedure*",
@@ -721,7 +721,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2876_20030402_600_nl.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:14:30.991119+00:00"
+    "_processedAt": "2026-05-27T07:28:52.304813+00:00"
   },
   {
     "caseNumber": "M.912",
@@ -766,7 +766,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsverfahren*",
@@ -777,7 +777,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m912_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:15:00.165442+00:00"
+    "_processedAt": "2026-05-27T07:29:21.890521+00:00"
   },
   {
     "caseNumber": "M.2413",
@@ -823,7 +823,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -834,7 +834,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2413_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:15:21.948858+00:00"
+    "_processedAt": "2026-05-27T07:29:49.802139+00:00"
   },
   {
     "caseNumber": "M.2416",
@@ -875,7 +875,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 7,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -886,7 +886,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2416_20030113_440_2212884_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:15:30.454802+00:00"
+    "_processedAt": "2026-05-27T07:29:59.725814+00:00"
   },
   {
     "caseNumber": "M.1578",
@@ -931,7 +931,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -942,7 +942,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1578_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:15:37.878648+00:00"
+    "_processedAt": "2026-05-27T07:30:09.802638+00:00"
   },
   {
     "caseNumber": "M.2389",
@@ -1002,7 +1002,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1013,7 +1013,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2389_20011220_600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:20:16.169169+00:00"
+    "_processedAt": "2026-05-27T07:35:46.998572+00:00"
   },
   {
     "caseNumber": "M.1097",
@@ -1058,7 +1058,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1069,7 +1069,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1097_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:21:31.663484+00:00"
+    "_processedAt": "2026-05-27T07:37:03.380169+00:00"
   },
   {
     "caseNumber": "M.358",
@@ -1114,7 +1114,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1125,7 +1125,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m358_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:21:40.658335+00:00"
+    "_processedAt": "2026-05-27T07:37:10.452955+00:00"
   },
   {
     "caseNumber": "M.2803",
@@ -1170,7 +1170,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1181,7 +1181,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202520/M_2803_10624384_57_6.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:22:30.397854+00:00"
+    "_processedAt": "2026-05-27T07:37:49.472958+00:00"
   },
   {
     "caseNumber": "M.1855",
@@ -1226,7 +1226,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1237,7 +1237,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1855_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:23:52.207281+00:00"
+    "_processedAt": "2026-05-27T07:39:06.318771+00:00"
   },
   {
     "caseNumber": "M.1439",
@@ -1346,7 +1346,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1357,7 +1357,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1439_15_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:26:54.445924+00:00"
+    "_processedAt": "2026-05-27T07:41:30.585594+00:00"
   },
   {
     "caseNumber": "M.1455",
@@ -1401,7 +1401,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1412,7 +1412,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1455_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:27:03.914139+00:00"
+    "_processedAt": "2026-05-27T07:41:39.146828+00:00"
   },
   {
     "caseNumber": "M.866",
@@ -1468,7 +1468,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m866_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:28:49.292588+00:00"
+    "_processedAt": "2026-05-27T07:43:14.835816+00:00"
   },
   {
     "caseNumber": "M.877",
@@ -1527,7 +1527,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1538,7 +1538,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m877_19970730_600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:29:10.687257+00:00"
+    "_processedAt": "2026-05-27T07:43:33.530284+00:00"
   },
   {
     "caseNumber": "M.1035",
@@ -1583,7 +1583,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1594,7 +1594,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1035_19971222_310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:29:31.393710+00:00"
+    "_processedAt": "2026-05-27T07:43:52.782860+00:00"
   },
   {
     "caseNumber": "M.1042",
@@ -1640,7 +1640,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1651,7 +1651,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1042_19980115_310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:29:36.405791+00:00"
+    "_processedAt": "2026-05-27T07:43:57.577099+00:00"
   },
   {
     "caseNumber": "M.3225",
@@ -1697,7 +1697,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1708,7 +1708,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3225_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:29:45.635389+00:00"
+    "_processedAt": "2026-05-27T07:44:04.819091+00:00"
   },
   {
     "caseNumber": "M.2268",
@@ -1757,7 +1757,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1768,7 +1768,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2268_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:30:13.792431+00:00"
+    "_processedAt": "2026-05-27T07:44:28.527513+00:00"
   },
   {
     "caseNumber": "M.235",
@@ -1814,7 +1814,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1825,7 +1825,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m235_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:30:46.809442+00:00"
+    "_processedAt": "2026-05-27T07:44:59.796776+00:00"
   },
   {
     "caseNumber": "M.214",
@@ -1870,7 +1870,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1881,7 +1881,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m214_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:31:01.161920+00:00"
+    "_processedAt": "2026-05-27T07:45:12.667599+00:00"
   },
   {
     "caseNumber": "M.259",
@@ -1926,7 +1926,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -1937,7 +1937,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m259_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:31:15.103821+00:00"
+    "_processedAt": "2026-05-27T07:45:25.246577+00:00"
   },
   {
     "caseNumber": "M.1813",
@@ -2046,7 +2046,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2057,7 +2057,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1813_en.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -2068,7 +2068,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1813_20000712_600_788488_PT.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "skiljeförfar*",
@@ -2079,7 +2079,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1813_20000712_600_788490_SV.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -2090,7 +2090,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1813_32_2.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -2101,7 +2101,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1813_33_2.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välimies*",
@@ -2117,7 +2117,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1813_20000712_600_788481_FI.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:33:06.130734+00:00"
+    "_processedAt": "2026-05-27T07:47:03.590165+00:00"
   },
   {
     "caseNumber": "M.1846",
@@ -2160,7 +2160,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2171,7 +2171,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1846_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:33:21.346065+00:00"
+    "_processedAt": "2026-05-27T07:47:17.728434+00:00"
   },
   {
     "caseNumber": "M.1751",
@@ -2216,7 +2216,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2227,7 +2227,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1751_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:33:32.979787+00:00"
+    "_processedAt": "2026-05-27T07:47:28.699310+00:00"
   },
   {
     "caseNumber": "M.2621",
@@ -2272,7 +2272,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "tribunal arbitral*",
@@ -2283,7 +2283,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2621_62_fr.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:34:02.040217+00:00"
+    "_processedAt": "2026-05-27T07:47:54.972581+00:00"
   },
   {
     "caseNumber": "M.1309",
@@ -2329,7 +2329,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "clause compromissoire*",
@@ -2340,7 +2340,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1309_fr.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:34:10.643108+00:00"
+    "_processedAt": "2026-05-27T07:48:03.459018+00:00"
   },
   {
     "caseNumber": "M.1313",
@@ -2448,7 +2448,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2459,7 +2459,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1313_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "voldgift*",
@@ -2470,7 +2470,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787537_DA.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -2486,7 +2486,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787541_DE.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -2497,7 +2497,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787544_EL.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -2508,7 +2508,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787545_ES.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitral*",
@@ -2519,7 +2519,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787548_IT.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -2530,7 +2530,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787550_PT.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "skiljedom*",
@@ -2541,7 +2541,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1313_19990309_600_787552_SV.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:35:00.128665+00:00"
+    "_processedAt": "2026-05-27T07:48:47.718811+00:00"
   },
   {
     "caseNumber": "M.1795",
@@ -2586,7 +2586,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2597,7 +2597,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1795_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:35:05.654839+00:00"
+    "_processedAt": "2026-05-27T07:48:52.795980+00:00"
   },
   {
     "caseNumber": "M.1368",
@@ -2642,7 +2642,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2653,7 +2653,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1368_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:36:09.917108+00:00"
+    "_processedAt": "2026-05-27T07:49:51.376633+00:00"
   },
   {
     "caseNumber": "M.1383",
@@ -2790,7 +2790,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1383_19990929_600_pt.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:38:36.952709+00:00"
+    "_processedAt": "2026-05-27T07:52:04.997278+00:00"
   },
   {
     "caseNumber": "M.3083",
@@ -2834,7 +2834,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2845,7 +2845,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3083_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:40:35.774493+00:00"
+    "_processedAt": "2026-05-27T07:54:03.044534+00:00"
   },
   {
     "caseNumber": "M.3099",
@@ -2902,7 +2902,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -2913,7 +2913,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3099_20041006_600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:40:50.945643+00:00"
+    "_processedAt": "2026-05-27T07:54:17.787183+00:00"
   },
   {
     "caseNumber": "M.2947",
@@ -3028,7 +3028,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -3039,7 +3039,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2947_20030611_600_es.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -3050,7 +3050,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2947_20030611_600_pt.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:41:42.555583+00:00"
+    "_processedAt": "2026-05-27T07:55:09.225641+00:00"
   },
   {
     "caseNumber": "M.1628",
@@ -3162,7 +3162,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -3173,7 +3173,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1628_20000209_600_el.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -3184,7 +3184,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1628_20000209_600_es.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -3195,7 +3195,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1628_20000209_600_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -3206,7 +3206,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1628_20000209_600_pt.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:42:47.495662+00:00"
+    "_processedAt": "2026-05-27T07:56:13.534033+00:00"
   },
   {
     "caseNumber": "M.2972",
@@ -3324,7 +3324,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välimies*",
@@ -3335,7 +3335,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2972_20030723_600_fi.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:44:23.569349+00:00"
+    "_processedAt": "2026-05-27T07:57:48.475921+00:00"
   },
   {
     "caseNumber": "M.2978",
@@ -3395,7 +3395,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -3406,7 +3406,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2978_20040107_600_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:45:26.551476+00:00"
+    "_processedAt": "2026-05-27T07:58:50.211947+00:00"
   },
   {
     "caseNumber": "M.1671",
@@ -3514,7 +3514,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -3525,7 +3525,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1671_en.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "voldgift*",
@@ -3536,7 +3536,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788165_DA.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsverfahren*",
@@ -3547,7 +3547,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788171_DE.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -3558,7 +3558,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788175_EL.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -3569,7 +3569,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788195_ES.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -3580,7 +3580,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788204_PT.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "skiljeförfar*",
@@ -3596,7 +3596,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M1671_20000503_600_788208_SV.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:46:55.304004+00:00"
+    "_processedAt": "2026-05-27T07:59:52.948174+00:00"
   },
   {
     "caseNumber": "M.1673",
@@ -3706,7 +3706,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -3717,7 +3717,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1673_20000613_600_el.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -3728,7 +3728,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1673_20000613_600_en.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -3739,7 +3739,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m1673_20000613_600_pt.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:48:07.074189+00:00"
+    "_processedAt": "2026-05-27T08:00:41.665801+00:00"
   },
   {
     "caseNumber": "M.2533",
@@ -3855,7 +3855,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -3866,7 +3866,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2533_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:48:48.539922+00:00"
+    "_processedAt": "2026-05-27T08:01:12.768424+00:00"
   },
   {
     "caseNumber": "M.2530",
@@ -3911,7 +3911,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -3927,7 +3927,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m2530_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:48:57.527316+00:00"
+    "_processedAt": "2026-05-27T08:01:19.855667+00:00"
   },
   {
     "caseNumber": "M.623",
@@ -4035,7 +4035,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "välimies*",
@@ -4051,7 +4051,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_fi.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4062,7 +4062,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrag*",
@@ -4073,7 +4073,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_pt.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "skiljedom*",
@@ -4084,7 +4084,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_sv.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "voldgift*",
@@ -4095,7 +4095,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_da.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "διαιτη*",
@@ -4106,7 +4106,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_el.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -4117,7 +4117,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m623_es.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:54:30.787598+00:00"
+    "_processedAt": "2026-05-27T08:05:39.582727+00:00"
   },
   {
     "caseNumber": "M.616",
@@ -4162,7 +4162,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4173,7 +4173,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m616_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:55:03.713549+00:00"
+    "_processedAt": "2026-05-27T08:06:10.271023+00:00"
   },
   {
     "caseNumber": "M.4691",
@@ -4223,7 +4223,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4234,7 +4234,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4691_20071011_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:55:34.401950+00:00"
+    "_processedAt": "2026-05-27T08:06:38.008831+00:00"
   },
   {
     "caseNumber": "M.5579",
@@ -4286,7 +4286,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "tribunal arbitral*",
@@ -4297,7 +4297,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5579_20100122_20212_fr.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:56:19.926664+00:00"
+    "_processedAt": "2026-05-27T08:07:22.262139+00:00"
   },
   {
     "caseNumber": "M.5121",
@@ -4347,7 +4347,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4358,7 +4358,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5121_20080625_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:56:42.088733+00:00"
+    "_processedAt": "2026-05-27T08:07:44.756733+00:00"
   },
   {
     "caseNumber": "M.5153",
@@ -4439,7 +4439,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4450,7 +4450,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5153_20090109_20600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:57:18.486832+00:00"
+    "_processedAt": "2026-05-27T08:08:18.770801+00:00"
   },
   {
     "caseNumber": "M.3770",
@@ -4493,7 +4493,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4504,7 +4504,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3770_20050704_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T20:58:11.357011+00:00"
+    "_processedAt": "2026-05-27T08:09:10.627179+00:00"
   },
   {
     "caseNumber": "M.3333",
@@ -4583,7 +4583,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4594,7 +4594,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3333_20040719_590_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:01:06.624589+00:00"
+    "_processedAt": "2026-05-27T08:11:29.388317+00:00"
   },
   {
     "caseNumber": "M.5440",
@@ -4678,7 +4678,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4689,7 +4689,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5440_20090828_20600_en.pdf"
       },
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -4705,7 +4705,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5440_20090828_20600_1842419_DE.pdf"
       },
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "tribunal arbitral*",
@@ -4716,7 +4716,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5440_5536_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:02:22.860437+00:00"
+    "_processedAt": "2026-05-27T08:12:27.020301+00:00"
   },
   {
     "caseNumber": "M.3280",
@@ -4763,7 +4763,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4774,7 +4774,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3280_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:02:45.554766+00:00"
+    "_processedAt": "2026-05-27T08:12:46.286700+00:00"
   },
   {
     "caseNumber": "M.4139",
@@ -4824,7 +4824,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4835,7 +4835,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4139_20060331_20310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:02:46.426430+00:00"
+    "_processedAt": "2026-05-27T08:12:47.035936+00:00"
   },
   {
     "caseNumber": "M.4137",
@@ -4884,7 +4884,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4895,7 +4895,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4137_20060602_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:03:02.937907+00:00"
+    "_processedAt": "2026-05-27T08:12:59.201760+00:00"
   },
   {
     "caseNumber": "M.4153",
@@ -4945,7 +4945,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -4956,7 +4956,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4153_20060919_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:03:32.236733+00:00"
+    "_processedAt": "2026-05-27T08:13:20.501366+00:00"
   },
   {
     "caseNumber": "M.4180",
@@ -5020,7 +5020,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "tribunal arbitral*",
@@ -5031,7 +5031,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4180_20061114_20600_fr.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5042,7 +5042,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4180_20061114_20600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:05:12.302290+00:00"
+    "_processedAt": "2026-05-27T08:14:38.772373+00:00"
   },
   {
     "caseNumber": "M.5046",
@@ -5125,7 +5125,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5136,7 +5136,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5046_20081217_20600_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsverfahren*",
@@ -5147,7 +5147,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5046_20081217_20600_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:07:52.649254+00:00"
+    "_processedAt": "2026-05-27T08:17:02.339335+00:00"
   },
   {
     "caseNumber": "M.4504",
@@ -5211,7 +5211,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "tribunal arbitral*",
@@ -5222,7 +5222,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4504_20070718_20600_fr.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -5233,7 +5233,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4504_20070718_20600_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:09:34.451264+00:00"
+    "_processedAt": "2026-05-27T08:18:45.665747+00:00"
   },
   {
     "caseNumber": "M.3664",
@@ -5278,7 +5278,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5289,7 +5289,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3664_20050302_20310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:10:32.531594+00:00"
+    "_processedAt": "2026-05-27T08:19:42.000517+00:00"
   },
   {
     "caseNumber": "M.3680",
@@ -5335,7 +5335,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5346,7 +5346,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3680_20050428_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:10:42.410980+00:00"
+    "_processedAt": "2026-05-27T08:19:51.868639+00:00"
   },
   {
     "caseNumber": "M.3687",
@@ -5405,7 +5405,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5416,7 +5416,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3687_20050825_20600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:11:04.713609+00:00"
+    "_processedAt": "2026-05-27T08:20:12.438196+00:00"
   },
   {
     "caseNumber": "M.3686",
@@ -5461,7 +5461,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5472,7 +5472,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3686_20050330_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:11:09.886166+00:00"
+    "_processedAt": "2026-05-27T08:20:17.626494+00:00"
   },
   {
     "caseNumber": "M.3692",
@@ -5517,7 +5517,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5528,7 +5528,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3692_20050523_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:11:11.481372+00:00"
+    "_processedAt": "2026-05-27T08:20:19.178412+00:00"
   },
   {
     "caseNumber": "M.3696",
@@ -5587,7 +5587,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5598,7 +5598,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3696_20051221_20600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:11:49.649332+00:00"
+    "_processedAt": "2026-05-27T08:20:56.129089+00:00"
   },
   {
     "caseNumber": "M.4475",
@@ -5648,7 +5648,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5659,7 +5659,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4475_20070208_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:12:35.055623+00:00"
+    "_processedAt": "2026-05-27T08:21:40.201878+00:00"
   },
   {
     "caseNumber": "M.5335",
@@ -5742,7 +5742,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5753,7 +5753,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/M5335_20090622_20600_229007_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:13:46.344710+00:00"
+    "_processedAt": "2026-05-27T08:22:50.431204+00:00"
   },
   {
     "caseNumber": "M.4495",
@@ -5803,7 +5803,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5814,7 +5814,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4495_20070206_20310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:13:47.708906+00:00"
+    "_processedAt": "2026-05-27T08:22:51.685875+00:00"
   },
   {
     "caseNumber": "M.4494",
@@ -5864,7 +5864,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5875,7 +5875,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4494_20070220_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:13:50.877548+00:00"
+    "_processedAt": "2026-05-27T08:22:55.169699+00:00"
   },
   {
     "caseNumber": "M.5364",
@@ -5929,7 +5929,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 5,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitraj*",
@@ -5945,7 +5945,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5364_20090109_20212_es.pdf"
       },
       {
-        "dec_idx": 5,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -5956,7 +5956,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5364_20090109_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:14:14.576116+00:00"
+    "_processedAt": "2026-05-27T08:23:18.599454+00:00"
   },
   {
     "caseNumber": "M.3940",
@@ -6015,7 +6015,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3940_20051222_20212_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:15:08.971733+00:00"
+    "_processedAt": "2026-05-27T08:24:15.141662+00:00"
   },
   {
     "caseNumber": "M.4835",
@@ -6058,7 +6058,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6069,7 +6069,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4835_20080630_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:15:35.869531+00:00"
+    "_processedAt": "2026-05-27T08:24:42.298472+00:00"
   },
   {
     "caseNumber": "M.4844",
@@ -6119,7 +6119,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6130,7 +6130,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4844_20071003_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:15:46.273317+00:00"
+    "_processedAt": "2026-05-27T08:24:53.063167+00:00"
   },
   {
     "caseNumber": "M.3998",
@@ -6180,7 +6180,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6191,7 +6191,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3998_20060519_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:15:50.004272+00:00"
+    "_processedAt": "2026-05-27T08:24:56.595385+00:00"
   },
   {
     "caseNumber": "M.4842",
@@ -6240,7 +6240,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6251,7 +6251,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4842_20071031_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:15:52.158082+00:00"
+    "_processedAt": "2026-05-27T08:24:58.986335+00:00"
   },
   {
     "caseNumber": "M.4404",
@@ -6315,7 +6315,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6326,7 +6326,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4404_20070522_20600_en.pdf"
       },
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "Schiedsgericht*",
@@ -6342,7 +6342,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4404_20070522_20600_de.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:16:55.245313+00:00"
+    "_processedAt": "2026-05-27T08:25:59.983318+00:00"
   },
   {
     "caseNumber": "M.3570",
@@ -6387,7 +6387,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitral*",
@@ -6398,7 +6398,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3570_20041122_20212_it.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:17:26.668434+00:00"
+    "_processedAt": "2026-05-27T08:26:31.264312+00:00"
   },
   {
     "caseNumber": "M.5756",
@@ -6450,7 +6450,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6461,7 +6461,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5756_1418_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:17:33.041285+00:00"
+    "_processedAt": "2026-05-27T08:26:37.568523+00:00"
   },
   {
     "caseNumber": "M.4381",
@@ -6528,7 +6528,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6539,7 +6539,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4381_20070510_20600_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:19:56.732948+00:00"
+    "_processedAt": "2026-05-27T08:28:48.005127+00:00"
   },
   {
     "caseNumber": "M.3858",
@@ -6585,7 +6585,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6596,7 +6596,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m3858_20050720_20310_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:20:54.784666+00:00"
+    "_processedAt": "2026-05-27T08:29:41.037325+00:00"
   },
   {
     "caseNumber": "M.4730",
@@ -6646,7 +6646,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6657,7 +6657,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4730_20070921_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:22:13.487946+00:00"
+    "_processedAt": "2026-05-27T08:30:58.143697+00:00"
   },
   {
     "caseNumber": "M.4746",
@@ -6707,7 +6707,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6718,7 +6718,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4746_20071106_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:22:20.552991+00:00"
+    "_processedAt": "2026-05-27T08:31:05.491194+00:00"
   },
   {
     "caseNumber": "M.4779",
@@ -6770,7 +6770,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6781,7 +6781,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4779_20071213_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:23:14.112965+00:00"
+    "_processedAt": "2026-05-27T08:31:58.056290+00:00"
   },
   {
     "caseNumber": "M.4314",
@@ -6833,7 +6833,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6844,7 +6844,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m4314_20061211_20212_en.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:23:42.264023+00:00"
+    "_processedAt": "2026-05-27T08:32:25.904629+00:00"
   },
   {
     "caseNumber": "M.5650",
@@ -6896,7 +6896,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6907,7 +6907,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5650_1469_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:23:48.348755+00:00"
+    "_processedAt": "2026-05-27T08:32:31.793672+00:00"
   },
   {
     "caseNumber": "M.7724",
@@ -6969,7 +6969,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -6980,7 +6980,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7724_2310_7.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:24:18.901052+00:00"
+    "_processedAt": "2026-05-27T08:33:01.038797+00:00"
   },
   {
     "caseNumber": "M.7758",
@@ -7036,7 +7036,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7047,7 +7047,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7758_2937_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:25:52.471866+00:00"
+    "_processedAt": "2026-05-27T08:34:32.846734+00:00"
   },
   {
     "caseNumber": "M.6447",
@@ -7104,7 +7104,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7115,7 +7115,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6447_20120330_20212_2452290_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:26:26.385778+00:00"
+    "_processedAt": "2026-05-27T08:35:05.775350+00:00"
   },
   {
     "caseNumber": "M.7777",
@@ -7167,7 +7167,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7178,7 +7178,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7777_669_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:26:30.422685+00:00"
+    "_processedAt": "2026-05-27T08:35:09.720821+00:00"
   },
   {
     "caseNumber": "M.6458",
@@ -7237,7 +7237,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7248,7 +7248,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6458_20120921_20600_3188150_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:27:02.475303+00:00"
+    "_processedAt": "2026-05-27T08:35:40.632025+00:00"
   },
   {
     "caseNumber": "M.7333",
@@ -7327,7 +7327,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7333_20141114_20212_4015913_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:28:00.900323+00:00"
+    "_processedAt": "2026-05-27T08:36:38.279393+00:00"
   },
   {
     "caseNumber": "M.7337",
@@ -7383,7 +7383,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7394,7 +7394,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7337_20141219_20212_4101276_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:28:12.939077+00:00"
+    "_processedAt": "2026-05-27T08:36:49.688040+00:00"
   },
   {
     "caseNumber": "M.6497",
@@ -7461,7 +7461,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6497_20121212_20600_3210969_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:28:24.828857+00:00"
+    "_processedAt": "2026-05-27T08:37:01.404882+00:00"
   },
   {
     "caseNumber": "M.7353",
@@ -7514,7 +7514,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7525,7 +7525,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7353_1239_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:28:37.692128+00:00"
+    "_processedAt": "2026-05-27T08:37:13.653135+00:00"
   },
   {
     "caseNumber": "M.6800",
@@ -7581,7 +7581,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7592,7 +7592,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6800_20150616_20600_4523168_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:30:06.493857+00:00"
+    "_processedAt": "2026-05-27T08:38:40.008197+00:00"
   },
   {
     "caseNumber": "M.6828",
@@ -7644,7 +7644,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7655,7 +7655,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6828_20130620_20310_3232613_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:30:32.543225+00:00"
+    "_processedAt": "2026-05-27T08:39:04.935208+00:00"
   },
   {
     "caseNumber": "M.5984",
@@ -7711,7 +7711,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7722,7 +7722,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m5984_1922_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:30:40.768824+00:00"
+    "_processedAt": "2026-05-27T08:39:13.245146+00:00"
   },
   {
     "caseNumber": "M.6844",
@@ -7787,7 +7787,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6844_20130701_20212_3423812_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:30:51.298139+00:00"
+    "_processedAt": "2026-05-27T08:39:23.471691+00:00"
   },
   {
     "caseNumber": "M.6857",
@@ -7842,7 +7842,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7853,7 +7853,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6857_4443_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:31:11.288775+00:00"
+    "_processedAt": "2026-05-27T08:39:42.709061+00:00"
   },
   {
     "caseNumber": "M.7631",
@@ -7904,7 +7904,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7915,7 +7915,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7631_20150902_20310_4570768_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:31:54.773054+00:00"
+    "_processedAt": "2026-05-27T08:40:24.776604+00:00"
   },
   {
     "caseNumber": "M.7637",
@@ -7973,7 +7973,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -7984,7 +7984,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7637_1290_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:32:07.884799+00:00"
+    "_processedAt": "2026-05-27T08:40:37.790427+00:00"
   },
   {
     "caseNumber": "M.6381",
@@ -8031,7 +8031,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8042,7 +8042,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6381_20120213_20310_2277480_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:33:25.034822+00:00"
+    "_processedAt": "2026-05-27T08:41:50.306000+00:00"
   },
   {
     "caseNumber": "M.7194",
@@ -8111,7 +8111,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7194_20150224_20600_4264271_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:36:09.735813+00:00"
+    "_processedAt": "2026-05-27T08:44:34.294008+00:00"
   },
   {
     "caseNumber": "M.6722",
@@ -8164,7 +8164,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8175,7 +8175,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6722_20130412_20212_3045451_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:37:04.371576+00:00"
+    "_processedAt": "2026-05-27T08:45:25.747425+00:00"
   },
   {
     "caseNumber": "M.7962",
@@ -8236,7 +8236,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8247,7 +8247,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7962_4097_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:37:38.886422+00:00"
+    "_processedAt": "2026-05-27T08:45:58.877578+00:00"
   },
   {
     "caseNumber": "M.7541",
@@ -8312,7 +8312,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7541_20150714_20212_4564413_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:39:22.039404+00:00"
+    "_processedAt": "2026-05-27T08:47:38.125339+00:00"
   },
   {
     "caseNumber": "M.7585",
@@ -8364,7 +8364,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8375,7 +8375,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7585_925_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:40:54.714493+00:00"
+    "_processedAt": "2026-05-27T08:49:13.928059+00:00"
   },
   {
     "caseNumber": "M.6286",
@@ -8434,7 +8434,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 5,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8445,7 +8445,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6286_20120516_20600_3495062_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:42:13.938479+00:00"
+    "_processedAt": "2026-05-27T08:50:32.699560+00:00"
   },
   {
     "caseNumber": "M.7047",
@@ -8494,7 +8494,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8505,7 +8505,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7047_687_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:42:37.312606+00:00"
+    "_processedAt": "2026-05-27T08:50:55.552455+00:00"
   },
   {
     "caseNumber": "M.6607",
@@ -8587,7 +8587,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6607_2259_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:45:07.900449+00:00"
+    "_processedAt": "2026-05-27T08:53:21.893378+00:00"
   },
   {
     "caseNumber": "M.7873",
@@ -8638,7 +8638,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8649,7 +8649,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7873_1821_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:46:43.297101+00:00"
+    "_processedAt": "2026-05-27T08:54:57.127480+00:00"
   },
   {
     "caseNumber": "M.6564",
@@ -8708,7 +8708,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8719,7 +8719,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6564_20121106_20212_2779342_EN.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:47:19.535214+00:00"
+    "_processedAt": "2026-05-27T08:55:33.591742+00:00"
   },
   {
     "caseNumber": "M.7421",
@@ -8777,7 +8777,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8788,7 +8788,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7421_3169_4.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:48:05.870746+00:00"
+    "_processedAt": "2026-05-27T08:56:16.571792+00:00"
   },
   {
     "caseNumber": "M.7000",
@@ -8872,7 +8872,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8883,7 +8883,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7000_20141010_20600_4221982_EN.pdf"
       },
       {
-        "dec_idx": 3,
+        "dec_idx": 1,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8894,7 +8894,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7000_4325_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:49:26.957612+00:00"
+    "_processedAt": "2026-05-27T08:57:36.474585+00:00"
   },
   {
     "caseNumber": "M.7018",
@@ -8959,7 +8959,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 5,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -8970,7 +8970,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7018_6053_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:50:13.609872+00:00"
+    "_processedAt": "2026-05-27T08:58:22.544570+00:00"
   },
   {
     "caseNumber": "M.6095",
@@ -9019,7 +9019,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9030,7 +9030,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m6095_417_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:50:44.238287+00:00"
+    "_processedAt": "2026-05-27T08:58:51.176456+00:00"
   },
   {
     "caseNumber": "M.7822",
@@ -9086,7 +9086,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m7822_494_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:52:16.557944+00:00"
+    "_processedAt": "2026-05-27T09:00:22.580648+00:00"
   },
   {
     "caseNumber": "M.9945",
@@ -9150,7 +9150,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202114/m9945_1174_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:52:52.393919+00:00"
+    "_processedAt": "2026-05-27T09:00:57.783594+00:00"
   },
   {
     "caseNumber": "M.9502",
@@ -9200,7 +9200,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9211,7 +9211,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m9502_1378_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:54:15.494581+00:00"
+    "_processedAt": "2026-05-27T09:02:18.910103+00:00"
   },
   {
     "caseNumber": "M.8665",
@@ -9265,7 +9265,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9276,7 +9276,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8665_687_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:55:37.537733+00:00"
+    "_processedAt": "2026-05-27T09:03:38.024550+00:00"
   },
   {
     "caseNumber": "M.9554",
@@ -9337,7 +9337,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202111/m9554_2093_4.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:57:38.261496+00:00"
+    "_processedAt": "2026-05-27T09:05:34.127329+00:00"
   },
   {
     "caseNumber": "M.9564",
@@ -9394,7 +9394,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9405,7 +9405,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202143/M_9564_7982342_9230_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T21:59:03.576524+00:00"
+    "_processedAt": "2026-05-27T09:06:57.128675+00:00"
   },
   {
     "caseNumber": "M.8242",
@@ -9459,7 +9459,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9470,7 +9470,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8242_701_7.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:00:24.621534+00:00"
+    "_processedAt": "2026-05-27T09:08:10.846898+00:00"
   },
   {
     "caseNumber": "M.8137",
@@ -9520,7 +9520,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9531,7 +9531,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8137_359_2.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:00:36.381351+00:00"
+    "_processedAt": "2026-05-27T09:08:23.441609+00:00"
   },
   {
     "caseNumber": "M.8146",
@@ -9581,7 +9581,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9592,7 +9592,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8146_288_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:00:55.753738+00:00"
+    "_processedAt": "2026-05-27T09:08:43.092758+00:00"
   },
   {
     "caseNumber": "M.9014",
@@ -9653,7 +9653,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9664,7 +9664,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202121/m9014_8817_6.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:02:11.734769+00:00"
+    "_processedAt": "2026-05-27T09:09:58.659089+00:00"
   },
   {
     "caseNumber": "M.9041",
@@ -9731,7 +9731,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m9041_263_7.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:02:45.756797+00:00"
+    "_processedAt": "2026-05-27T09:10:32.444167+00:00"
   },
   {
     "caseNumber": "M.9064",
@@ -9791,7 +9791,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9802,7 +9802,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202110/m9064_3542_11.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:03:27.537729+00:00"
+    "_processedAt": "2026-05-27T09:11:11.544098+00:00"
   },
   {
     "caseNumber": "M.8948",
@@ -9857,7 +9857,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -9868,7 +9868,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8948_1004_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:04:57.593561+00:00"
+    "_processedAt": "2026-05-27T09:12:40.654192+00:00"
   },
   {
     "caseNumber": "M.9820",
@@ -9935,7 +9935,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202148/M_9820_8034733_3778_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:06:27.449931+00:00"
+    "_processedAt": "2026-05-27T09:14:08.057699+00:00"
   },
   {
     "caseNumber": "M.9829",
@@ -9995,7 +9995,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10006,7 +10006,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202427/M_9829_10140886_13930_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:07:26.715665+00:00"
+    "_processedAt": "2026-05-27T09:15:05.672103+00:00"
   },
   {
     "caseNumber": "M.8988",
@@ -10056,7 +10056,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10067,7 +10067,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8988_4908_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:07:47.959908+00:00"
+    "_processedAt": "2026-05-27T09:15:24.706668+00:00"
   },
   {
     "caseNumber": "M.9408",
@@ -10119,7 +10119,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10130,7 +10130,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/20212/m9408_2435_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:09:11.683851+00:00"
+    "_processedAt": "2026-05-27T09:16:47.918696+00:00"
   },
   {
     "caseNumber": "M.10149",
@@ -10189,7 +10189,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10200,7 +10200,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202619/M_10149_20190.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:10:27.396068+00:00"
+    "_processedAt": "2026-05-27T09:17:59.708394+00:00"
   },
   {
     "caseNumber": "M.9449",
@@ -10263,7 +10263,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202050/m9449_530_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:12:08.554218+00:00"
+    "_processedAt": "2026-05-27T09:19:32.556427+00:00"
   },
   {
     "caseNumber": "M.8124",
@@ -10314,7 +10314,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10325,7 +10325,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8124_1349_5.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:12:40.406864+00:00"
+    "_processedAt": "2026-05-27T09:19:54.482064+00:00"
   },
   {
     "caseNumber": "M.8084",
@@ -10402,7 +10402,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10413,7 +10413,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202150/M_8084_8063752_13335_9.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:15:09.557863+00:00"
+    "_processedAt": "2026-05-27T09:22:06.459544+00:00"
   },
   {
     "caseNumber": "M.8864",
@@ -10480,7 +10480,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10491,7 +10491,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8864_7363_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:18:15.910420+00:00"
+    "_processedAt": "2026-05-27T09:24:50.093141+00:00"
   },
   {
     "caseNumber": "M.9730",
@@ -10562,7 +10562,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202142/M_9730_7959952_4150_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:20:27.291023+00:00"
+    "_processedAt": "2026-05-27T09:26:54.583339+00:00"
   },
   {
     "caseNumber": "M.9744",
@@ -10612,7 +10612,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10623,7 +10623,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202114/m9744_1442_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:21:02.547980+00:00"
+    "_processedAt": "2026-05-27T09:27:25.660817+00:00"
   },
   {
     "caseNumber": "M.8435",
@@ -10675,7 +10675,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10686,7 +10686,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8435_1101_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:21:50.797178+00:00"
+    "_processedAt": "2026-05-27T09:28:08.959501+00:00"
   },
   {
     "caseNumber": "M.8444",
@@ -10744,7 +10744,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10755,7 +10755,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8444_6740_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:22:35.315201+00:00"
+    "_processedAt": "2026-05-27T09:28:51.055313+00:00"
   },
   {
     "caseNumber": "M.10262",
@@ -10820,7 +10820,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 5,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10831,7 +10831,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202242/M_10262_8559915_3054_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:23:07.044468+00:00"
+    "_processedAt": "2026-05-27T09:29:20.423310+00:00"
   },
   {
     "caseNumber": "M.9779",
@@ -10882,7 +10882,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10893,7 +10893,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202325/M_9779_7559737_2816_5.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:23:37.091037+00:00"
+    "_processedAt": "2026-05-27T09:29:49.730533+00:00"
   },
   {
     "caseNumber": "M.9287",
@@ -10946,7 +10946,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -10957,7 +10957,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202048/m9287_1169_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:27:13.004732+00:00"
+    "_processedAt": "2026-05-27T09:32:58.676651+00:00"
   },
   {
     "caseNumber": "M.8738",
@@ -11010,7 +11010,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11021,7 +11021,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8738_1325_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:27:42.970390+00:00"
+    "_processedAt": "2026-05-27T09:33:22.282998+00:00"
   },
   {
     "caseNumber": "M.8744",
@@ -11076,7 +11076,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11087,7 +11087,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8744_1326_7.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:27:57.560465+00:00"
+    "_processedAt": "2026-05-27T09:33:33.122026+00:00"
   },
   {
     "caseNumber": "M.8306",
@@ -11149,7 +11149,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 2,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11160,7 +11160,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8306_3479_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:29:22.102607+00:00"
+    "_processedAt": "2026-05-27T09:34:44.750073+00:00"
   },
   {
     "caseNumber": "M.8314",
@@ -11222,7 +11222,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases/decisions/m8314_662_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:29:32.393038+00:00"
+    "_processedAt": "2026-05-27T09:34:53.661679+00:00"
   },
   {
     "caseNumber": "M.9660",
@@ -11281,7 +11281,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11292,7 +11292,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202120/m9660_3314_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:30:10.268463+00:00"
+    "_processedAt": "2026-05-27T09:35:29.640392+00:00"
   },
   {
     "caseNumber": "M.9674",
@@ -11355,7 +11355,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202037/m9674_516_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:30:37.515751+00:00"
+    "_processedAt": "2026-05-27T09:35:56.342936+00:00"
   },
   {
     "caseNumber": "M.10806",
@@ -11414,7 +11414,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 4,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11425,7 +11425,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202520/M_10806_10624386_6538_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:38:28.733814+00:00"
+    "_processedAt": "2026-05-27T09:42:16.426229+00:00"
   },
   {
     "caseNumber": "M.10896",
@@ -11493,7 +11493,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202426/M_10896_10132275_5929_5.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:40:50.755771+00:00"
+    "_processedAt": "2026-05-27T09:44:08.579680+00:00"
   },
   {
     "caseNumber": "M.10926",
@@ -11547,7 +11547,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11558,7 +11558,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202433/M_10926_10201036_3861_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:45:48.073443+00:00"
+    "_processedAt": "2026-05-27T09:48:02.498653+00:00"
   },
   {
     "caseNumber": "M.11830",
@@ -11608,7 +11608,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11619,7 +11619,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202551/M_11830_10846699_4319_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:46:29.679861+00:00"
+    "_processedAt": "2026-05-27T09:48:35.614641+00:00"
   },
   {
     "caseNumber": "M.11578",
@@ -11681,7 +11681,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202611/M_11578_10911971_2951_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:49:24.810890+00:00"
+    "_processedAt": "2026-05-27T09:50:50.661258+00:00"
   },
   {
     "caseNumber": "M.10663",
@@ -11749,7 +11749,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202349/M_10663_9760254_2225_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:50:04.658670+00:00"
+    "_processedAt": "2026-05-27T09:51:25.831456+00:00"
   },
   {
     "caseNumber": "M.11125",
@@ -11799,7 +11799,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 1,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11810,7 +11810,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202409/M_11125_9939967_581_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:52:02.789649+00:00"
+    "_processedAt": "2026-05-27T09:53:07.982823+00:00"
   },
   {
     "caseNumber": "M.11956",
@@ -11880,7 +11880,7 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202617/M_11956_5590.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:54:10.807447+00:00"
+    "_processedAt": "2026-05-27T09:54:59.685296+00:00"
   },
   {
     "caseNumber": "M.10646",
@@ -11939,7 +11939,7 @@
     ],
     "_matches": [
       {
-        "dec_idx": 3,
+        "dec_idx": 0,
         "keywords": [
           {
             "keyword": "arbitrat*",
@@ -11950,6 +11950,6 @@
         "pdfUrl": "https://ec.europa.eu/competition/mergers/cases1/202330/M_10646_9311516_7443_3.pdf"
       }
     ],
-    "_processedAt": "2026-05-25T22:55:11.498848+00:00"
+    "_processedAt": "2026-05-27T09:55:52.131600+00:00"
   }
 ]
