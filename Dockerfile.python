@@ -1,6 +1,6 @@
 FROM python:3.13-slim
 
-COPY scripts/requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+COPY scripts/requirements.txt /scripts/requirements.txt
+RUN pip install --no-cache-dir -r /scripts/requirements.txt
 
 WORKDIR /scripts

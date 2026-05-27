@@ -245,6 +245,79 @@ def main() -> None:
             out(f"        attachmentName:     {first(am.get('attachmentName', []))}")
             out(f"        attachmentLink:     {first(am.get('attachmentLink', []))}")
  
+    # --- metadataReference uniqueness check ---
+    out(f"\n{SEP}")
+    out("metadataReference uniqueness check (decisionAttachments across all cases):")
+    all_refs = []
+    for case in data.values():
+        for dec in case.get("decisions", []):
+            for att in dec.get("decisionAttachments", []):
+                ref = first(att.get("metadata", {}).get("metadataReference", []))
+                if ref:
+                    all_refs.append(ref)
+    total_refs = len(all_refs)
+    unique_refs = len(set(all_refs))
+    duplicates = total_refs - unique_refs
+    out(f"  Total attachment metadataReferences:  {total_refs}")
+    out(f"  Unique metadataReferences:            {unique_refs}")
+    out(f"  Duplicates:                           {duplicates}")
+    if duplicates > 0:
+        from collections import Counter as _Counter
+        counts = _Counter(all_refs)
+        out("  Duplicate values (first 10):")
+        for ref, cnt in counts.most_common(10):
+            if cnt > 1:
+                out(f"    {ref}: {cnt} times")
+ 
+    # --- Multi-value field check ---
+    out(f"\n{SEP}")
+    out("Fields with more than one value (across all cases and decisions):")
+ 
+    # Case metadata fields
+    case_multi = Counter()
+    for case in data.values():
+        for key, val in case.get("metadata", {}).items():
+            if isinstance(val, list) and len(val) > 1:
+                case_multi[key] += 1
+ 
+    # Decision metadata fields
+    dec_multi = Counter()
+    for case in data.values():
+        for dec in case.get("decisions", []):
+            for key, val in dec.get("metadata", {}).items():
+                if isinstance(val, list) and len(val) > 1:
+                    dec_multi[key] += 1
+ 
+    # Attachment metadata fields
+    att_multi = Counter()
+    for case in data.values():
+        for dec in case.get("decisions", []):
+            for att in dec.get("decisionAttachments", []):
+                for key, val in att.get("metadata", {}).items():
+                    if isinstance(val, list) and len(val) > 1:
+                        att_multi[key] += 1
+ 
+    if case_multi:
+        out("  Case metadata:")
+        for key, cnt in case_multi.most_common():
+            out(f"    {key:60s} {cnt:6d} cases")
+    else:
+        out("  Case metadata: no multi-value fields found")
+ 
+    if dec_multi:
+        out("  Decision metadata:")
+        for key, cnt in dec_multi.most_common():
+            out(f"    {key:60s} {cnt:6d} decisions")
+    else:
+        out("  Decision metadata: no multi-value fields found")
+ 
+    if att_multi:
+        out("  Attachment metadata:")
+        for key, cnt in att_multi.most_common():
+            out(f"    {key:60s} {cnt:6d} attachments")
+    else:
+        out("  Attachment metadata: no multi-value fields found")
+ 
     # --- Save to file ---
     OUTPUT_PATH.write_text(buf.getvalue(), encoding="utf-8")
     print(f"\nOutput saved to: {OUTPUT_PATH}")
